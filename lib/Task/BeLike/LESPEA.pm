@@ -3,7 +3,7 @@ use strict;
 
 package Task::BeLike::LESPEA;
 BEGIN {
-  $Task::BeLike::LESPEA::VERSION = '1.10';
+  $Task::BeLike::LESPEA::VERSION = '1.11';
 }
 
 #ABSTRACT: Modules that LESPEA uses on a daily basis
@@ -105,7 +105,7 @@ Task::BeLike::LESPEA - Modules that LESPEA uses on a daily basis
 
 =head1 VERSION
 
-version 1.10
+version 1.11
 
 =head2 Builders
 

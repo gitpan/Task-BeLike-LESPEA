@@ -7,7 +7,9 @@ use Module::Build 0.3601;
 
 my %module_build_args = (
   'build_requires' => {
-    'Module::Build' => '0.3601'
+    'English' => '0',
+    'Module::Build' => '0.3601',
+    'Test::More' => '0'
   },
   'configure_requires' => {
     'Module::Build' => '0.3601'
@@ -17,7 +19,7 @@ my %module_build_args = (
     'Adam Lesperance <lespea@gmail.com>'
   ],
   'dist_name' => 'Task-BeLike-LESPEA',
-  'dist_version' => '1.10',
+  'dist_version' => '1.11',
   'license' => 'perl',
   'module_name' => 'Task::BeLike::LESPEA',
   'recommends' => {},
