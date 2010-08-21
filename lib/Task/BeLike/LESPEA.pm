@@ -3,7 +3,7 @@ use strict;
 
 package Task::BeLike::LESPEA;
 BEGIN {
-  $Task::BeLike::LESPEA::VERSION = '1.00';
+  $Task::BeLike::LESPEA::VERSION = '1.10';
 }
 
 #ABSTRACT: Modules that LESPEA uses on a daily basis
@@ -13,6 +13,7 @@ BEGIN {
 use DBD::CSV;
 use DBD::ODBC;
 use DBI;
+use DateTime::Format::DateParse;
 use Devel::NYTProf;
 use Dist::Zilla;
 use Dist::Zilla::App::Command::cover;
@@ -49,8 +50,12 @@ use JSON;
 use JSON::Any;
 use JSON::XS;
 use List::MoreUtils;
+use Math::Big;
+use Math::Big::Factors;
 use Module::Build;
 use Module::Install;
+use Module::Install::AuthorTests;
+use Module::Install::ExtraTests;
 use Module::Starter;
 use Moose;
 use MooseX::App::Cmd;
@@ -100,7 +105,7 @@ Task::BeLike::LESPEA - Modules that LESPEA uses on a daily basis
 
 =head1 VERSION
 
-version 1.00
+version 1.10
 
 =head2 Builders
 
@@ -139,6 +144,12 @@ Use Microsoft ODBC connections
 =head3 L<DBI>
 
 Base database handler
+
+=head2 Dates
+
+=head3 L<DateTime::Format::DateParse>
+
+Takes a string and makes a DateTime object out of it
 
 =head2 Development
 
@@ -320,6 +331,14 @@ Pure perl installer
 
 Extension of MakeMaker
 
+=head3 L<Module::Install::AuthorTests>
+
+Run author tests
+
+=head3 L<Module::Install::ExtraTests>
+
+Run extra tests
+
 =head2 JSON
 
 =head3 L<JSON>
@@ -333,6 +352,16 @@ Auto use the best available JSON module
 =head3 L<JSON::XS>
 
 Fast C module to parse JSON
+
+=head2 Math
+
+=head3 L<Math::Big>
+
+Easily compute math with big ints
+
+=head3 L<Math::Big::Factors>
+
+Compute factors of a number
 
 =head2 Moose
 

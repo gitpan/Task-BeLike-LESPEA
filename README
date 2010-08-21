@@ -2,7 +2,7 @@ NAME
     Task::BeLike::LESPEA - Modules that LESPEA uses on a daily basis
 
 VERSION
-    version 1.00
+    version 1.10
 
   Builders
    Module::Starter
@@ -30,6 +30,10 @@ VERSION
 
    DBI
     Base database handler
+
+  Dates
+   DateTime::Format::DateParse
+    Takes a string and makes a DateTime object out of it
 
   Development
    Devel::NYTProf
@@ -164,6 +168,12 @@ VERSION
    Module::Install
     Extension of MakeMaker
 
+   Module::Install::AuthorTests
+    Run author tests
+
+   Module::Install::ExtraTests
+    Run extra tests
+
   JSON
    JSON
     Basic perl module to parse JSON
@@ -173,6 +183,13 @@ VERSION
 
    JSON::XS
     Fast C module to parse JSON
+
+  Math
+   Math::Big
+    Easily compute math with big ints
+
+   Math::Big::Factors
+    Compute factors of a number
 
   Moose
    Getopt::Long::Descriptive
