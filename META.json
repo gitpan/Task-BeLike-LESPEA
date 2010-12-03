@@ -134,7 +134,7 @@
          "web" : "http://github.com/lespea/task-belike-lespea"
       }
    },
-   "version" : "1.200000",
+   "version" : "1.200001",
    "x_Dist_Zilla" : {
       "plugins" : [
          {
