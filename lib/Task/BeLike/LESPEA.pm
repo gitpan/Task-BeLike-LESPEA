@@ -3,98 +3,13 @@ use strict;
 
 package Task::BeLike::LESPEA;
 BEGIN {
-  $Task::BeLike::LESPEA::VERSION = '1.11';
+  $Task::BeLike::LESPEA::AUTHORITY = 'cpan:LESPEA';
+}
+BEGIN {
+  $Task::BeLike::LESPEA::VERSION = '1.200000';
 }
 
 #ABSTRACT: Modules that LESPEA uses on a daily basis
-
-
-
-use DBD::CSV;
-use DBD::ODBC;
-use DBI;
-use DateTime::Format::DateParse;
-use Devel::NYTProf;
-use Dist::Zilla;
-use Dist::Zilla::App::Command::cover;
-use Dist::Zilla::Plugin::Bugtracker;
-use Dist::Zilla::Plugin::CheckChangeLog;
-use Dist::Zilla::Plugin::CheckChangesHasContent;
-use Dist::Zilla::Plugin::CheckChangesTests;
-use Dist::Zilla::Plugin::CompileTests;
-use Dist::Zilla::Plugin::CriticTests;
-use Dist::Zilla::Plugin::Git;
-use Dist::Zilla::Plugin::HasVersionTests;
-use Dist::Zilla::Plugin::InstallGuide;
-use Dist::Zilla::Plugin::KwaliteeTests;
-use Dist::Zilla::Plugin::MinimumPerl;
-use Dist::Zilla::Plugin::MinimumVersionTests;
-use Dist::Zilla::Plugin::PodSpellingTests;
-use Dist::Zilla::Plugin::PodWeaver;
-use Dist::Zilla::Plugin::PortabilityTests;
-use Dist::Zilla::Plugin::Prepender;
-use Dist::Zilla::Plugin::ReadmeFromPod;
-use Dist::Zilla::Plugin::ReadmeMarkdownFromPod;
-use Dist::Zilla::Plugin::ReportVersions;
-use Dist::Zilla::Plugin::Repository;
-use Dist::Zilla::Plugin::SynopsisTests;
-use Dist::Zilla::Plugin::UnusedVarsTests;
-use Exporter::Easy;
-use File::HomeDir;
-use File::ShareDir;
-use File::Slurp;
-use Getopt::Long::Descriptive;
-use HTML::Tree;
-use HTML::TreeBuilder::XPath;
-use JSON;
-use JSON::Any;
-use JSON::XS;
-use List::MoreUtils;
-use Math::Big;
-use Math::Big::Factors;
-use Module::Build;
-use Module::Install;
-use Module::Install::AuthorTests;
-use Module::Install::ExtraTests;
-use Module::Starter;
-use Moose;
-use MooseX::App::Cmd;
-use MooseX::Method::Signatures;
-use MooseX::Types::Common;
-use MooseX::Types::Structured;
-use Net::CIDR::Lite;
-use Net::DNS;
-use Net::IP;
-use Net::Netmask;
-use Net::Ping;
-use Perl::Critic;
-use Perl::MinimumVersion;
-use Perl::PrereqScanner;
-use Pod::Coverage::TrustPod;
-use Pod::Elemental::Transformer::List;
-use Pod::Weaver;
-use Pod::Weaver::Section::Support;
-use Readonly::XS;
-use Regexp::Common;
-use Spreadsheet::ParseExcel;
-use Spreadsheet::Read;
-use Spreadsheet::WriteExcel;
-use Test::CPAN::Meta;
-use Test::Most;
-use Test::Perl::Critic;
-use Test::Perl::Critic;
-use Test::Pod;
-use Test::Pod::Coverage;
-use Text::CSV_XS;
-use Try::Tiny;
-use YAML;
-use YAML::Any;
-use YAML::Syck;
-use YAML::XS;
-use autodie;
-use namespace::autoclean;
-
-
 1;
 __END__
 =pod
@@ -105,7 +20,7 @@ Task::BeLike::LESPEA - Modules that LESPEA uses on a daily basis
 
 =head1 VERSION
 
-version 1.11
+version 1.200000
 
 =head2 Builders
 
@@ -167,6 +82,10 @@ Basic module
 
 Test your test coverage with Devel::Cover
 
+=head3 L<Dist::Zilla::Plugin::Authority>
+
+Adds an authority context to the version
+
 =head3 L<Dist::Zilla::Plugin::Bugtracker>
 
 Adds all the CPAN links to perldoc
@@ -199,6 +118,10 @@ Used to check/sync with github
 
 Make sure the modules have version info
 
+=head3 L<Dist::Zilla::Plugin::Homepage>
+
+Adds the homepage to the distmeta info
+
 =head3 L<Dist::Zilla::Plugin::InstallGuide>
 
 Create an INSTALL file based on which build system you're using
@@ -215,10 +138,6 @@ Figures out which version of Perl is the minimum version required
 
 Make sure the code works with provided versions
 
-=head3 L<Dist::Zilla::Plugin::PodSpellingTests>
-
-Check spelling of perldoc
-
 =head3 L<Dist::Zilla::Plugin::PodWeaver>
 
 Dynamically creates POD documentation
@@ -234,10 +153,6 @@ Adds a header to all your files (usefull small readme)
 =head3 L<Dist::Zilla::Plugin::ReadmeFromPod>
 
 Creates a README file from the POD documentation
-
-=head3 L<Dist::Zilla::Plugin::ReadmeMarkdownFromPod>
-
-Create markdown from Readme
 
 =head3 L<Dist::Zilla::Plugin::ReportVersions>
 
@@ -280,10 +195,6 @@ Helper module for dzil plugin
 Helper module for dzil plugin
 
 =head3 L<Test::CPAN::Meta>
-
-Helper module for dzil plugin
-
-=head3 L<Test::Perl::Critic>
 
 Helper module for dzil plugin
 
@@ -384,6 +295,10 @@ Adds greate paramater varification to methods (with a performance price)
 =head3 L<MooseX::Types::Common>
 
 As it sounds, common types for Moose
+
+=head3 L<MooseX::Types::DateTimeX>
+
+Awesome DateTime parser
 
 =head3 L<MooseX::Types::Structured>
 
@@ -541,11 +456,11 @@ L<http://matrix.cpantesters.org/?dist=Task-BeLike-LESPEA>
 
 Source Code Repository
 
-The code is open to the world, and available for you to hack on. Please feel free to browse it and play
-with it, or whatever. If you want to contribute patches, please send me a diff or prod me to pull
-from your repository :)
+You can contribute or fork this project via github:
 
-L<git://github.com/lespea/Task-BeLike-LESPEA>
+L<http://github.com/lespea/task-belike-lespea>
+
+    git://github.com/lespea/task-belike-lespea.git
 
 =back
 

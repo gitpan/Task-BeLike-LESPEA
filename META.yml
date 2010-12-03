@@ -4,12 +4,14 @@ author:
   - 'Adam Lesperance <lespea@gmail.com>'
 build_requires:
   English: 0
+  File::Find: 0
+  File::Temp: 0
   Module::Build: 0.3601
   Test::More: 0
 configure_requires:
   Module::Build: 0.3601
 dynamic_config: 0
-generated_by: 'Dist::Zilla version 4.102221, CPAN::Meta::Converter version 2.102160'
+generated_by: 'Dist::Zilla version 4.102345, CPAN::Meta::Converter version 2.102400'
 license: perl
 meta-spec:
   url: http://module-build.sourceforge.net/META-spec-v1.4.html
@@ -23,6 +25,7 @@ requires:
   Devel::NYTProf: 0
   Dist::Zilla: 0
   Dist::Zilla::App::Command::cover: 0
+  Dist::Zilla::Plugin::Authority: 0
   Dist::Zilla::Plugin::Bugtracker: 0
   Dist::Zilla::Plugin::CheckChangeLog: 0
   Dist::Zilla::Plugin::CheckChangesHasContent: 0
@@ -31,16 +34,15 @@ requires:
   Dist::Zilla::Plugin::CriticTests: 0
   Dist::Zilla::Plugin::Git: 0
   Dist::Zilla::Plugin::HasVersionTests: 0
+  Dist::Zilla::Plugin::Homepage: 0
   Dist::Zilla::Plugin::InstallGuide: 0
   Dist::Zilla::Plugin::KwaliteeTests: 0
   Dist::Zilla::Plugin::MinimumPerl: 0
   Dist::Zilla::Plugin::MinimumVersionTests: 0
-  Dist::Zilla::Plugin::PodSpellingTests: 0
   Dist::Zilla::Plugin::PodWeaver: 0
   Dist::Zilla::Plugin::PortabilityTests: 0
   Dist::Zilla::Plugin::Prepender: 0
   Dist::Zilla::Plugin::ReadmeFromPod: 0
-  Dist::Zilla::Plugin::ReadmeMarkdownFromPod: 0
   Dist::Zilla::Plugin::ReportVersions: 0
   Dist::Zilla::Plugin::Repository: 0
   Dist::Zilla::Plugin::SynopsisTests: 0
@@ -67,6 +69,7 @@ requires:
   MooseX::App::Cmd: 0
   MooseX::Method::Signatures: 0
   MooseX::Types::Common: 0
+  MooseX::Types::DateTimeX: 0
   MooseX::Types::Structured: 0
   Net::CIDR::Lite: 0
   Net::DNS: 0
@@ -101,5 +104,214 @@ requires:
   perl: 5.006
 resources:
   bugtracker: http://rt.cpan.org/Public/Dist/Display.html?Name=Task-BeLike-LESPEA
-  repository: git://github.com/lespea/Task-BeLike-LESPEA
-version: 1.11
+  homepage: http://search.cpan.org/dist/Task-BeLike-LESPEA/
+  repository: git://github.com/lespea/task-belike-lespea.git
+version: 1.200000
+x_Dist_Zilla:
+  plugins:
+    -
+      class: Dist::Zilla::Plugin::GatherDir
+      name: GatherDir
+      version: 4.102345
+    -
+      class: Dist::Zilla::Plugin::CompileTests
+      name: CompileTests
+      version: 1.103030
+    -
+      class: Dist::Zilla::Plugin::MinimumPerl
+      name: MinimumPerl
+      version: 0.02
+    -
+      class: Dist::Zilla::Plugin::CriticTests
+      name: CriticTests
+      version: 1.102280
+    -
+      class: Dist::Zilla::Plugin::HasVersionTests
+      name: HasVersionTests
+      version: 1.101420
+    -
+      class: Dist::Zilla::Plugin::MetaTests
+      name: MetaTests
+      version: 4.102345
+    -
+      class: Dist::Zilla::Plugin::MinimumVersionTests
+      name: MinimumVersionTests
+      version: 1.101421
+    -
+      class: Dist::Zilla::Plugin::PodCoverageTests
+      name: PodCoverageTests
+      version: 4.102345
+    -
+      class: Dist::Zilla::Plugin::PodSyntaxTests
+      name: PodSyntaxTests
+      version: 4.102345
+    -
+      class: Dist::Zilla::Plugin::PortabilityTests
+      name: PortabilityTests
+      version: 1.101420
+    -
+      class: Dist::Zilla::Plugin::SynopsisTests
+      name: SynopsisTests
+      version: 1.101420
+    -
+      class: Dist::Zilla::Plugin::UnusedVarsTests
+      name: UnusedVarsTests
+      version: 1.100860
+    -
+      class: Dist::Zilla::Plugin::ReadmeFromPod
+      name: ReadmeFromPod
+      version: 0.14
+    -
+      class: Dist::Zilla::Plugin::NoTabsTests
+      name: NoTabsTests
+      version: 0.01
+    -
+      class: Dist::Zilla::Plugin::EOLTests
+      name: EOLTests
+      version: 0.02
+    -
+      class: Dist::Zilla::Plugin::KwaliteeTests
+      name: KwaliteeTests
+      version: 1.101420
+    -
+      class: Dist::Zilla::Plugin::PruneCruft
+      name: PruneCruft
+      version: 4.102345
+    -
+      class: Dist::Zilla::Plugin::ManifestSkip
+      name: ManifestSkip
+      version: 4.102345
+    -
+      class: Dist::Zilla::Plugin::AutoPrereqs
+      name: AutoPrereqs
+      version: 4.102345
+    -
+      class: Dist::Zilla::Plugin::Prereqs
+      config:
+        Dist::Zilla::Plugin::Prereqs:
+          phase: runtime
+          type: requires
+      name: Prereqs
+      version: 4.102345
+    -
+      class: Dist::Zilla::Plugin::Homepage
+      name: Homepage
+      version: 1.101420
+    -
+      class: Dist::Zilla::Plugin::AutoMetaResources
+      name: AutoMetaResources
+      version: 1.103080
+    -
+      class: Dist::Zilla::Plugin::ExtraTests
+      name: ExtraTests
+      version: 4.102345
+    -
+      class: Dist::Zilla::Plugin::PkgVersion
+      name: PkgVersion
+      version: 4.102345
+    -
+      class: Dist::Zilla::Plugin::Authority
+      name: Authority
+      version: 1.000
+    -
+      class: Dist::Zilla::Plugin::ExecDir
+      name: ExecDir
+      version: 4.102345
+    -
+      class: Dist::Zilla::Plugin::Bugtracker
+      name: Bugtracker
+      version: 1.102670
+    -
+      class: Dist::Zilla::Plugin::MetaConfig
+      name: MetaConfig
+      version: 4.102345
+    -
+      class: Dist::Zilla::Plugin::License
+      name: License
+      version: 4.102345
+    -
+      class: Dist::Zilla::Plugin::ModuleBuild
+      name: ModuleBuild
+      version: 4.102345
+    -
+      class: Dist::Zilla::Plugin::InstallGuide
+      name: InstallGuide
+      version: 1.101461
+    -
+      class: Dist::Zilla::Plugin::MetaYAML
+      name: MetaYAML
+      version: 4.102345
+    -
+      class: Dist::Zilla::Plugin::MetaJSON
+      name: MetaJSON
+      version: 4.102345
+    -
+      class: Dist::Zilla::Plugin::PodWeaver
+      name: PodWeaver
+      version: 3.101641
+    -
+      class: Dist::Zilla::Plugin::Manifest
+      name: Manifest
+      version: 4.102345
+    -
+      class: Dist::Zilla::Plugin::CheckChangeLog
+      name: CheckChangeLog
+      version: 0.01
+    -
+      class: Dist::Zilla::Plugin::CheckChangesTests
+      name: CheckChangesTests
+      version: 1.100900
+    -
+      class: Dist::Zilla::Plugin::CheckChangesHasContent
+      name: CheckChangesHasContent
+      version: 0.003
+    -
+      class: Dist::Zilla::Plugin::Git::Check
+      name: Git::Check
+      version: 1.102810
+    -
+      class: Dist::Zilla::Plugin::TestRelease
+      name: TestRelease
+      version: 4.102345
+    -
+      class: Dist::Zilla::Plugin::ConfirmRelease
+      name: ConfirmRelease
+      version: 4.102345
+    -
+      class: Dist::Zilla::Plugin::UploadToCPAN
+      name: UploadToCPAN
+      version: 4.102345
+    -
+      class: Dist::Zilla::Plugin::Git::Tag
+      name: Git::Tag
+      version: 1.102810
+    -
+      class: Dist::Zilla::Plugin::Git::Commit
+      name: Commit_Changes
+      version: 1.102810
+    -
+      class: Dist::Zilla::Plugin::Git::Push
+      name: Git::Push
+      version: 1.102810
+    -
+      class: Dist::Zilla::Plugin::FinderCode
+      name: ':InstallModules'
+      version: 4.102345
+    -
+      class: Dist::Zilla::Plugin::FinderCode
+      name: ':TestFiles'
+      version: 4.102345
+    -
+      class: Dist::Zilla::Plugin::FinderCode
+      name: ':ExecFiles'
+      version: 4.102345
+    -
+      class: Dist::Zilla::Plugin::FinderCode
+      name: ':ShareFiles'
+      version: 4.102345
+  zilla:
+    class: Dist::Zilla::Dist::Builder
+    config:
+      is_trial: 0
+    version: 4.102345
+x_authority: cpan:LESPEA
