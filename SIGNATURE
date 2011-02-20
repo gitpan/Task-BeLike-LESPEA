@@ -1,0 +1,68 @@
+This file contains message digests of all files listed in MANIFEST,
+signed via the Module::Signature module, version 0.66.
+
+To verify the content in this distribution, first make sure you have
+Module::Signature installed, then type:
+
+    % cpansign -v
+
+It will check each file's integrity, as well as the signature's
+validity.  If "==> Signature verified OK! <==" is not displayed,
+the distribution may already have been compromised, and you should
+not run its Makefile.PL or Build.PL.
+
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+SHA1 d982f6fe40b3742fc67e7fa286273ea12ca8ecbb Build.PL
+SHA1 876c726f7ce545764a2d1fa2ec6a8a81f92988c4 Changes
+SHA1 d3911bbc9514b7f5136b2d59c4074dc1e5f843dd INSTALL
+SHA1 e06014d000783d2d4a4d43141975e77423700c6e LICENSE
+SHA1 d9f654428a48d5dc0d84480668c7b273e4b86b7c MANIFEST
+SHA1 9f580e505c546bb8b3d10d5c773852693e147461 MANIFEST.SKIP
+SHA1 c09bdf95782be71b8d6321926434b76338f54fc9 META.json
+SHA1 21a28528ea294160363bcec18ee918388249f4d3 META.yml
+SHA1 91a3429e22796c1a38fc5b4c36bfb1a268217579 Makefile.PL
+SHA1 36fbfb4b65adbff8b00d7e2b031651d2b54f0173 README
+SHA1 3aeb6423ac065408f9d247cbf94c56be8a6f2787 README.html
+SHA1 96ed7c1d87b63b664e2bc84c17288d8574a419a0 dist.ini
+SHA1 bc4dff55696fd7f683ab9e4149dbd9b6dafcbc0e examples/example.pl
+SHA1 cbe2a2f62bd4d0a12035cd9ad0c2dd575e8602dd gen_module.pl
+SHA1 d4ea41dedccf7f67931632a46b10a65d62da29e3 lib/Task/BeLike/LESPEA.pm
+SHA1 1d5ce1379af4a322d94f19f5843e23ebeb740366 perlcritic.rc
+SHA1 c314a3ec8ccdfb719271712bb909e2254bd6d52d ppm_install.bat
+SHA1 56da0605c8f7c75a40196f98ca52f325b09318e3 t/00-compile.t
+SHA1 fa45d6e6ab1cd421349dea4ef527bfd5cdc8a09e t/author-critic.t
+SHA1 6b823fd75631d47297112da5f145e1767a6fad0d t/release-check-changes.t
+SHA1 9b8a4e30abfc779f1082b5a2fbf250ca1853747c t/release-consistent-version.t
+SHA1 99fd7a50c65d07b8dcb369a7d2ea75860944ea1d t/release-cpan-changes.t
+SHA1 87768d177f8c2e2df9c591cde869e7c8a245555e t/release-dist-manifest.t
+SHA1 bf8570ef6888d79ca6a0c9e21b206b904b0775e2 t/release-distmeta.t
+SHA1 94334e0361920bbae970cfc1455e98a1a03626e6 t/release-eol.t
+SHA1 0068bf52fc88b39cc6509199f19a77890edb9bb0 t/release-has-version.t
+SHA1 961a1e2c92d836c8cad2d34b784cbc75345dec63 t/release-kwalitee.t
+SHA1 54ed25287b7e1c9ff328eaf126d438438c8a1d48 t/release-minimum-version.t
+SHA1 455d1dd1867212a665ad5ea4126b572411de300c t/release-no-tabs.t
+SHA1 a27fcc572066eee8c964952cd34eb857d9c71634 t/release-pod-coverage.t
+SHA1 b30cbdfaf935017c4568c0c91b242438cb87786e t/release-pod-syntax.t
+SHA1 3bb783b8a31b5eaff916bcb8bf7b348ee340ecb5 t/release-portability.t
+SHA1 612226d447015079c046d65932f774304a4b9f20 t/release-synopsis.t
+SHA1 d7221447937ab93002a123801def7be09748c106 t/release-unused-vars.t
+SHA1 cb40e2602bb4f2607808b26270456a7f51d1472a weaver.ini
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.4.11 (GNU/Linux)
+
+iQIcBAEBAgAGBQJNYG9PAAoJEM/nbidTjcrndcEP/j/mdQ51CixeXUR2FvX6vA2O
+jmjLdEBJeCnULbiEg5SOptDrJ62Cpx8rEQbcc6KKUtRCtPj6tdEFEaE44JGfimpH
+mKpbxtOes92n1aktWeosGAP+33+qSs2OZwK7442lGWkXlzq5G8WvAwv8945hZmD6
+KAcSzcdqBlWC+tjUtr7zHoWsExxZxiTNWoz1FQKM7qmorasyNURtOvpRqdjeNKtq
+4irOlafsm2wQKLJ0sNl7xObNWxV3IPcQsntkP1qc4Ha1eoAiHQMfkZSmJb5XeqTA
+iMy6atbFaXF777/+MAEc9QnJ3qB0cBLNeUZmQdaPsQybtqd5cpUzmaPEpTERvshu
+sTvcWyeq5IMcqOX717Pav2p9TJqORqgGpB3EUgRoAV1tqff0tl3pvNQ2BXViyK/l
+CLrQW/F/FhzGfZgZfIl3+7aiTi9zy6ENTrkKLaPUOYn5Xao8JzWM7pQDCCwbdn3F
+y8ibmmZ6teCvlH/5JHSPCmmlAKeZNrMOsyt908V/rjPfGWGhBnSmsbX2uBc7sExe
+PS1TZBW+/vX77sJ78VSeAkGHOpC+xgkYoPBhMMyyF57I4NtDJngCTVzPTDSUk6Vs
+TVQghPksIrjrSnjDmN7GdfD8Hr7MVJ6Jo9I4cQ6hLDtzpvJrgYPwEf3bb+/Civhu
+syfhG9JIXMJZKqCjT6xn
+=I5/t
+-----END PGP SIGNATURE-----

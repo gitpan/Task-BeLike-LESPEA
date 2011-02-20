@@ -2,31 +2,30 @@
 use strict;
 use warnings;
 
-use Module::Build 0.3601;
+BEGIN { require 5.008; }
+
+use ExtUtils::MakeMaker 6.31;
 
 
-my %module_build_args = (
-  'build_requires' => {
+
+my %WriteMakefileArgs = (
+  'ABSTRACT' => 'Modules that LESPEA uses on a daily basis',
+  'AUTHOR' => 'Adam Lesperance <lespea@gmail.com>',
+  'BUILD_REQUIRES' => {
     'English' => '0',
     'File::Find' => '0',
     'File::Temp' => '0',
-    'Module::Build' => '0.3601',
+    'ExtUtils::MakeMaker' => '6.31',
     'Test::More' => '0'
   },
-  'configure_requires' => {
-    'Module::Build' => '0.3601'
+  'CONFIGURE_REQUIRES' => {
+    'ExtUtils::MakeMaker' => '6.31'
   },
-  'dist_abstract' => 'Modules that LESPEA uses on a daily basis',
-  'dist_author' => [
-    'Adam Lesperance <lespea@gmail.com>'
-  ],
-  'dist_name' => 'Task-BeLike-LESPEA',
-  'dist_version' => '2.000000',
-  'license' => 'perl',
-  'module_name' => 'Task::BeLike::LESPEA',
-  'recommends' => {},
-  'recursive_test_files' => 1,
-  'requires' => {
+  'DISTNAME' => 'Task-BeLike-LESPEA',
+  'EXE_FILES' => [],
+  'LICENSE' => 'perl',
+  'NAME' => 'Task::BeLike::LESPEA',
+  'PREREQ_PM' => {
     'DBD::CSV' => '0',
     'DBD::ODBC' => '0',
     'DBI' => '0',
@@ -68,7 +67,7 @@ my %module_build_args = (
     'List::MoreUtils' => '0',
     'Math::Big' => '0',
     'Math::Big::Factors' => '0',
-    'Module::Build' => '0',
+    'ExtUtils::MakeMaker' => '6.31',
     'Module::Install' => '0',
     'Module::Install::AuthorTests' => '0',
     'Module::Install::ExtraTests' => '0',
@@ -109,13 +108,32 @@ my %module_build_args = (
     'YAML::XS' => '0',
     'autodie' => '0',
     'namespace::autoclean' => '0',
-    'perl' => '5.008',
     'utf8' => '0'
   },
-  'script_files' => []
+  'VERSION' => '2.000000',
+  'test' => {
+    'TESTS' => 't/*.t'
+  }
 );
 
 
-my $build = Module::Build->new(%module_build_args);
+unless ( eval { ExtUtils::MakeMaker->VERSION(6.56) } ) {
+  my $br = delete $WriteMakefileArgs{BUILD_REQUIRES};
+  my $pp = $WriteMakefileArgs{PREREQ_PM};
+  for my $mod ( keys %$br ) {
+    if ( exists $pp->{$mod} ) {
+      $pp->{$mod} = $br->{$mod} if $br->{$mod} > $pp->{$mod};
+    }
+    else {
+      $pp->{$mod} = $br->{$mod};
+    }
+  }
+}
 
-$build->create_build_script;
+delete $WriteMakefileArgs{CONFIGURE_REQUIRES}
+  unless eval { ExtUtils::MakeMaker->VERSION(6.52) };
+
+WriteMakefile(%WriteMakefileArgs);
+
+
+

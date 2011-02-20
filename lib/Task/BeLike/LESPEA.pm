@@ -1,16 +1,20 @@
 use warnings;
 use strict;
+use utf8;
 
 package Task::BeLike::LESPEA;
 BEGIN {
-  $Task::BeLike::LESPEA::AUTHORITY = 'cpan:LESPEA';
+  $Task::BeLike::LESPEA::VERSION = '2.000000';
 }
 BEGIN {
-  $Task::BeLike::LESPEA::VERSION = '1.200001';
+  $Task::BeLike::LESPEA::AUTHORITY = 'cpan:LESPEA';
 }
 
-#ABSTRACT: Modules that LESPEA uses on a daily basis
+# ABSTRACT: Modules that LESPEA uses on a daily basis
+
+
 1;
+
 __END__
 =pod
 
@@ -20,7 +24,9 @@ Task::BeLike::LESPEA - Modules that LESPEA uses on a daily basis
 
 =head1 VERSION
 
-version 1.200001
+version 2.000000
+
+=encoding utf8
 
 =head2 Builders
 
@@ -100,10 +106,6 @@ Best profiler available! (by far)
 
 Basic module
 
-=item L<Dist::Zilla::App::Command::cover|Dist::Zilla::App::Command::cover>
-
-Test your test coverage with Devel::Cover
-
 =item L<Dist::Zilla::Plugin::Authority|Dist::Zilla::Plugin::Authority>
 
 Adds an authority context to the version
@@ -131,10 +133,6 @@ Ensures that the module(s) compile correctly
 =item L<Dist::Zilla::Plugin::CriticTests|Dist::Zilla::Plugin::CriticTests>
 
 Checks your code for current best practices
-
-=item L<Dist::Zilla::Plugin::Git|Dist::Zilla::Plugin::Git>
-
-Used to check/sync with github
 
 =item L<Dist::Zilla::Plugin::HasVersionTests|Dist::Zilla::Plugin::HasVersionTests>
 
@@ -191,6 +189,10 @@ Makes sure the code in your SYNOPSIS passes a syntax check
 =item L<Dist::Zilla::Plugin::UnusedVarsTests|Dist::Zilla::Plugin::UnusedVarsTests>
 
 Checks your program for any unused variables (probably a bug?)
+
+=item L<Dist::Zilla::PluginBundle::Author::LESPEA|Dist::Zilla::PluginBundle::Author::LESPEA>
+
+My dzil config
 
 =item L<Perl::MinimumVersion|Perl::MinimumVersion>
 
@@ -456,19 +458,28 @@ Fast C module to parse JSON
 
 =back
 
+=head1 INSTALLATION
+
+See perlmodinstall for information and options on installing Perl modules.
+
 =head1 AUTHOR
 
 Adam Lesperance <lespea@gmail.com>
 
-=for :stopwords CPAN AnnoCPAN RT CPANTS Kwalitee diff
+=for :stopwords cpan testmatrix url annocpan anno bugtracker rt cpants kwalitee diff irc mailto metadata placeholders
 
 =head1 SUPPORT
+
+=head2 Perldoc
 
 You can find documentation for this module with the perldoc command.
 
   perldoc Task::BeLike::LESPEA
 
 =head2 Websites
+
+The following websites have more information about this module, and may be of help to you. As always,
+in addition to those websites please use your favorite search engine to discover more resources.
 
 =over 4
 
@@ -477,6 +488,12 @@ You can find documentation for this module with the perldoc command.
 Search CPAN
 
 L<http://search.cpan.org/dist/Task-BeLike-LESPEA>
+
+=item *
+
+RT: CPAN's Bug Tracker
+
+L<http://rt.cpan.org/NoAuth/Bugs.html?Dist=Task-BeLike-LESPEA>
 
 =item *
 
@@ -498,12 +515,6 @@ L<http://cpanforum.com/dist/Task-BeLike-LESPEA>
 
 =item *
 
-RT: CPAN's Bug Tracker
-
-L<http://rt.cpan.org/NoAuth/Bugs.html?Dist=Task-BeLike-LESPEA>
-
-=item *
-
 CPANTS Kwalitee
 
 L<http://cpants.perl.org/dist/overview/Task-BeLike-LESPEA>
@@ -520,23 +531,23 @@ CPAN Testers Matrix
 
 L<http://matrix.cpantesters.org/?dist=Task-BeLike-LESPEA>
 
-=item *
-
-Source Code Repository
-
-You can contribute or fork this project via github:
-
-L<http://github.com/lespea/task-belike-lespea>
-
-    git clone git://github.com/lespea/task-belike-lespea.git
-
 =back
 
-=head2 Bugs
+=head2 Bugs / Feature Requests
 
-Please report any bugs or feature requests to C<bug-task-belike-lespea at rt.cpan.org>, or through
-the web interface at L<http://rt.cpan.org/NoAuth/ReportBug.html?Queue=Task-BeLike-LESPEA>.  I will be
-notified, and then you'll automatically be notified of progress on your bug as I make changes.
+Please report any bugs or feature requests by email to C<bug-task-belike-lespea at rt.cpan.org>, or through
+the web interface at L<http://rt.cpan.org/NoAuth/ReportBug.html?Queue=Task-BeLike-LESPEA>. You will be automatically notified of any
+progress on the request by the system.
+
+=head2 Source Code
+
+The code is open to the world, and available for you to hack on. Please feel free to browse it and play
+with it, or whatever. If you want to contribute patches, please send me a diff or prod me to pull
+from your repository :)
+
+L<https://github.com/lespea/task-belike-lespea>
+
+  git clone git://github.com/lespea/task-belike-lespea.git
 
 =head1 COPYRIGHT AND LICENSE
 
@@ -544,6 +555,29 @@ This software is copyright (c) 2010 by Adam Lesperance.
 
 This is free software; you can redistribute it and/or modify it under
 the same terms as the Perl 5 programming language system itself.
+
+=head1 DISCLAIMER OF WARRANTY
+
+BECAUSE THIS SOFTWARE IS LICENSED FREE OF CHARGE, THERE IS NO WARRANTY
+FOR THE SOFTWARE, TO THE EXTENT PERMITTED BY APPLICABLE LAW. EXCEPT
+WHEN OTHERWISE STATED IN WRITING THE COPYRIGHT HOLDERS AND/OR OTHER
+PARTIES PROVIDE THE SOFTWARE "AS IS" WITHOUT WARRANTY OF ANY KIND,
+EITHER EXPRESSED OR IMPLIED, INCLUDING, BUT NOT LIMITED TO, THE
+IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR
+PURPOSE. THE ENTIRE RISK AS TO THE QUALITY AND PERFORMANCE OF THE
+SOFTWARE IS WITH YOU. SHOULD THE SOFTWARE PROVE DEFECTIVE, YOU ASSUME
+THE COST OF ALL NECESSARY SERVICING, REPAIR, OR CORRECTION.
+
+IN NO EVENT UNLESS REQUIRED BY APPLICABLE LAW OR AGREED TO IN WRITING
+WILL ANY COPYRIGHT HOLDER, OR ANY OTHER PARTY WHO MAY MODIFY AND/OR
+REDISTRIBUTE THE SOFTWARE AS PERMITTED BY THE ABOVE LICENCE, BE LIABLE
+TO YOU FOR DAMAGES, INCLUDING ANY GENERAL, SPECIAL, INCIDENTAL, OR
+CONSEQUENTIAL DAMAGES ARISING OUT OF THE USE OR INABILITY TO USE THE
+SOFTWARE (INCLUDING BUT NOT LIMITED TO LOSS OF DATA OR DATA BEING
+RENDERED INACCURATE OR LOSSES SUSTAINED BY YOU OR THIRD PARTIES OR A
+FAILURE OF THE SOFTWARE TO OPERATE WITH ANY OTHER SOFTWARE), EVEN IF
+SUCH HOLDER OR OTHER PARTY HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH
+DAMAGES.
 
 =cut
 
