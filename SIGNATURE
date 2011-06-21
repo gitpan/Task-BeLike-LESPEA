@@ -1,5 +1,5 @@
 This file contains message digests of all files listed in MANIFEST,
-signed via the Module::Signature module, version 0.66.
+signed via the Module::Signature module, version 0.68.
 
 To verify the content in this distribution, first make sure you have
 Module::Signature installed, then type:
@@ -14,36 +14,37 @@ not run its Makefile.PL or Build.PL.
 -----BEGIN PGP SIGNED MESSAGE-----
 Hash: SHA1
 
-SHA1 d982f6fe40b3742fc67e7fa286273ea12ca8ecbb Build.PL
-SHA1 876c726f7ce545764a2d1fa2ec6a8a81f92988c4 Changes
+SHA1 c0e23455f7d06b34683b931bb17a933dc8dbc84d Build.PL
+SHA1 d77699b5a50c1edf495e4ccb2b3c171bd9b2c4d1 Changes
 SHA1 d3911bbc9514b7f5136b2d59c4074dc1e5f843dd INSTALL
-SHA1 e06014d000783d2d4a4d43141975e77423700c6e LICENSE
-SHA1 d9f654428a48d5dc0d84480668c7b273e4b86b7c MANIFEST
+SHA1 97c5aad20395757f6a7cfe9b238fdeef3489fdb0 LICENSE
+SHA1 5beda2307b1ad9d112e9f657a5b475659b310008 MANIFEST
 SHA1 9f580e505c546bb8b3d10d5c773852693e147461 MANIFEST.SKIP
-SHA1 c09bdf95782be71b8d6321926434b76338f54fc9 META.json
-SHA1 21a28528ea294160363bcec18ee918388249f4d3 META.yml
-SHA1 91a3429e22796c1a38fc5b4c36bfb1a268217579 Makefile.PL
-SHA1 36fbfb4b65adbff8b00d7e2b031651d2b54f0173 README
-SHA1 3aeb6423ac065408f9d247cbf94c56be8a6f2787 README.html
-SHA1 96ed7c1d87b63b664e2bc84c17288d8574a419a0 dist.ini
+SHA1 a7168e29f4de41f227d8882007ecc2080466799e META.json
+SHA1 60ef1831260efd8fb2835406b19af5c8b9e5841a META.yml
+SHA1 76793309ed3d546f8fb9725266bbb0bb5a0f995a Makefile.PL
+SHA1 2f7d2822cc8182ab28be520d6315fe454c9d66a0 README
+SHA1 2c8f656855b502b477a960a502e4f16439effe4e README.html
+SHA1 94b09b903616c5336f58e3998fedb1a151650296 dist.ini
 SHA1 bc4dff55696fd7f683ab9e4149dbd9b6dafcbc0e examples/example.pl
-SHA1 cbe2a2f62bd4d0a12035cd9ad0c2dd575e8602dd gen_module.pl
-SHA1 d4ea41dedccf7f67931632a46b10a65d62da29e3 lib/Task/BeLike/LESPEA.pm
+SHA1 6e049a250e442db3db612d43ee33983b7efccfec gen_module.pl
+SHA1 b183b666112230090c4d6e033394611538f667b4 lib/Task/BeLike/LESPEA.pm
 SHA1 1d5ce1379af4a322d94f19f5843e23ebeb740366 perlcritic.rc
-SHA1 c314a3ec8ccdfb719271712bb909e2254bd6d52d ppm_install.bat
-SHA1 56da0605c8f7c75a40196f98ca52f325b09318e3 t/00-compile.t
+SHA1 322fabc93d95e9814b831ba89f86b5e50cd74b6a ppm_install.bat
+SHA1 ca41ffd5806caaf9da5dceea1320ae662780e9fc t/00-compile.t
+SHA1 2425f623ffba830d5270e31b6553c2b8153b55f2 t/000-report-versions-tiny.t
 SHA1 fa45d6e6ab1cd421349dea4ef527bfd5cdc8a09e t/author-critic.t
-SHA1 6b823fd75631d47297112da5f145e1767a6fad0d t/release-check-changes.t
-SHA1 9b8a4e30abfc779f1082b5a2fbf250ca1853747c t/release-consistent-version.t
-SHA1 99fd7a50c65d07b8dcb369a7d2ea75860944ea1d t/release-cpan-changes.t
+SHA1 3fec41c594fcd178191e6d8ae132357033b5b241 t/release-common_spelling.t
+SHA1 9c3627ff37f4fd5bddc34bf46cf3359eaf76a060 t/release-consistent-version.t
+SHA1 2346c6403f21d316327ee1d2b7857a60c76ef278 t/release-cpan-changes.t
 SHA1 87768d177f8c2e2df9c591cde869e7c8a245555e t/release-dist-manifest.t
 SHA1 bf8570ef6888d79ca6a0c9e21b206b904b0775e2 t/release-distmeta.t
-SHA1 94334e0361920bbae970cfc1455e98a1a03626e6 t/release-eol.t
+SHA1 a032c41ef6887fab1b900669c2d304fab46680e2 t/release-eol.t
 SHA1 0068bf52fc88b39cc6509199f19a77890edb9bb0 t/release-has-version.t
 SHA1 961a1e2c92d836c8cad2d34b784cbc75345dec63 t/release-kwalitee.t
 SHA1 54ed25287b7e1c9ff328eaf126d438438c8a1d48 t/release-minimum-version.t
 SHA1 455d1dd1867212a665ad5ea4126b572411de300c t/release-no-tabs.t
-SHA1 a27fcc572066eee8c964952cd34eb857d9c71634 t/release-pod-coverage.t
+SHA1 9433c240fe590bc404ab68ff63984df763e347ed t/release-pod-coverage.t
 SHA1 b30cbdfaf935017c4568c0c91b242438cb87786e t/release-pod-syntax.t
 SHA1 3bb783b8a31b5eaff916bcb8bf7b348ee340ecb5 t/release-portability.t
 SHA1 612226d447015079c046d65932f774304a4b9f20 t/release-synopsis.t
@@ -52,17 +53,17 @@ SHA1 cb40e2602bb4f2607808b26270456a7f51d1472a weaver.ini
 -----BEGIN PGP SIGNATURE-----
 Version: GnuPG v1.4.11 (GNU/Linux)
 
-iQIcBAEBAgAGBQJNYG9PAAoJEM/nbidTjcrndcEP/j/mdQ51CixeXUR2FvX6vA2O
-jmjLdEBJeCnULbiEg5SOptDrJ62Cpx8rEQbcc6KKUtRCtPj6tdEFEaE44JGfimpH
-mKpbxtOes92n1aktWeosGAP+33+qSs2OZwK7442lGWkXlzq5G8WvAwv8945hZmD6
-KAcSzcdqBlWC+tjUtr7zHoWsExxZxiTNWoz1FQKM7qmorasyNURtOvpRqdjeNKtq
-4irOlafsm2wQKLJ0sNl7xObNWxV3IPcQsntkP1qc4Ha1eoAiHQMfkZSmJb5XeqTA
-iMy6atbFaXF777/+MAEc9QnJ3qB0cBLNeUZmQdaPsQybtqd5cpUzmaPEpTERvshu
-sTvcWyeq5IMcqOX717Pav2p9TJqORqgGpB3EUgRoAV1tqff0tl3pvNQ2BXViyK/l
-CLrQW/F/FhzGfZgZfIl3+7aiTi9zy6ENTrkKLaPUOYn5Xao8JzWM7pQDCCwbdn3F
-y8ibmmZ6teCvlH/5JHSPCmmlAKeZNrMOsyt908V/rjPfGWGhBnSmsbX2uBc7sExe
-PS1TZBW+/vX77sJ78VSeAkGHOpC+xgkYoPBhMMyyF57I4NtDJngCTVzPTDSUk6Vs
-TVQghPksIrjrSnjDmN7GdfD8Hr7MVJ6Jo9I4cQ6hLDtzpvJrgYPwEf3bb+/Civhu
-syfhG9JIXMJZKqCjT6xn
-=I5/t
+iQIcBAEBAgAGBQJOAC8xAAoJEM/nbidTjcrn5toQANqR1MXYyTAYMNq6lotS/itk
+YWrN/vQDTyVOQU/2GSmv8Uvn6zXHuI2+rxFjX6GuBq1ML280EtVKmtkfy+TclKWD
+6Ls6I8qzmVDQcqhxne83gFdqfdy8CN10EjzoONI7OWXJN4Olkomyi1RPmuOpNkt3
+mGSWWS/9yslmfBuVqV2wm1SJJYidMbga6cuZ+Nbfns4L7zkUL3Rk9KRhm08fpZfE
+789zkaGQS9UVGu749yfEh0T5zH/AqCKzVkg5BBpDY63rupUorp9qyYhLNkKaxDA1
+D3W2UnRxj5JSfWDsYpdV2S8SLlKSPh+K72oQEPI1tQ1+oeuhpto9At/z5k1Cfhf8
+ab2Mg++yO5XBvyWer6R9iCbRjMF5eeJHs9OXUqrJ3wzqGHVXRPD1ssRnYkOGDhqM
+d1IbqC3wTwkfiC1vNL9MSLx7UlSxj7Xm5AJ35wGNwUR7orCG1H6RTq4Nokx/WqZd
+If7gNOEEWfZN7W9l8z4xLfOZ8M8XYCYlby4jsngZayYMprmgCsMhjOI7UEeueTkm
+Aw17oSpNpwstZSsMwfJWNz+m1oWH4Yz+pN0MMrGARpTVqTPYVYkdZtc2GLNpBCMs
+nbwqZfw9DR/6ppTiEz8fTEgzkpLlf4IrNIdgA7dsdFdqFLLamIVWDEmCcW+PoYAD
+Pd1Ck/E5DIGO/DxpR+ei
+=9SlB
 -----END PGP SIGNATURE-----

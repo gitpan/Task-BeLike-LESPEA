@@ -2,7 +2,7 @@ NAME
     Task::BeLike::LESPEA - Modules that LESPEA uses on a daily basis
 
 VERSION
-    version 2.000000
+    version 2.001000
 
   Builders
     Module::Starter
@@ -42,92 +42,8 @@ VERSION
     Dist::Zilla
         Basic module
 
-    Dist::Zilla::Plugin::Authority
-        Adds an authority context to the version
-
-    Dist::Zilla::Plugin::Bugtracker
-        Adds all the CPAN links to perldoc
-
-    Dist::Zilla::Plugin::CheckChangeLog
-        Make sure the changes file is up-to-date
-
-    Dist::Zilla::Plugin::CheckChangesHasContent
-        Make sure the changes file actually has content
-
-    Dist::Zilla::Plugin::CheckChangesTests
-        Make sure you're versioning properly
-
-    Dist::Zilla::Plugin::CompileTests
-        Ensures that the module(s) compile correctly
-
-    Dist::Zilla::Plugin::CriticTests
-        Checks your code for current best practices
-
-    Dist::Zilla::Plugin::HasVersionTests
-        Make sure the modules have version info
-
-    Dist::Zilla::Plugin::Homepage
-        Adds the homepage to the distmeta info
-
-    Dist::Zilla::Plugin::InstallGuide
-        Create an INSTALL file based on which build system you're using
-
-    Dist::Zilla::Plugin::KwaliteeTests
-        General quality tests
-
-    Dist::Zilla::Plugin::MinimumPerl
-        Figures out which version of Perl is the minimum version required
-
-    Dist::Zilla::Plugin::MinimumVersionTests
-        Make sure the code works with provided versions
-
-    Dist::Zilla::Plugin::PodWeaver
-        Dynamically creates POD documentation
-
-    Dist::Zilla::Plugin::PortabilityTests
-        Ensures your filenames will work cross-platform
-
-    Dist::Zilla::Plugin::Prepender
-        Adds a header to all your files (usefull small readme)
-
-    Dist::Zilla::Plugin::ReadmeFromPod
-        Creates a README file from the POD documentation
-
-    Dist::Zilla::Plugin::ReportVersions
-        List all the version of modules you're using
-
-    Dist::Zilla::Plugin::Repository
-        List github repo in perldoc
-
-    Dist::Zilla::Plugin::SynopsisTests
-        Makes sure the code in your SYNOPSIS passes a syntax check
-
-    Dist::Zilla::Plugin::UnusedVarsTests
-        Checks your program for any unused variables (probably a bug?)
-
     Dist::Zilla::PluginBundle::Author::LESPEA
         My dzil config
-
-    Perl::MinimumVersion
-        Helper module for dzil plugin
-
-    Perl::PrereqScanner
-        Helper module for dzil plugin
-
-    Pod::Coverage::TrustPod
-        Helper module for dzil plugin
-
-    Pod::Elemental::Transformer::List
-        Helper module for dzil plugin
-
-    Pod::Weaver
-        Helper module for dzil plugin
-
-    Pod::Weaver::Section::Support
-        Helper module for dzil plugin
-
-    Test::CPAN::Meta
-        Helper module for dzil plugin
 
   Error Checking
     Try::Tiny
@@ -195,7 +111,7 @@ VERSION
         Extend your moose object as a script
 
     MooseX::Method::Signatures
-        Adds greate paramater varification to methods (with a performance
+        Adds greate parameter varification to methods (with a performance
         price)
 
     MooseX::Types::Common
@@ -288,35 +204,64 @@ SUPPORT
 
     *   Search CPAN
 
+        The default CPAN search engine, useful to view POD in HTML format.
+
         <http://search.cpan.org/dist/Task-BeLike-LESPEA>
 
     *   RT: CPAN's Bug Tracker
 
+        The RT ( Request Tracker ) website is the default bug/issue tracking
+        system for CPAN.
+
         <http://rt.cpan.org/NoAuth/Bugs.html?Dist=Task-BeLike-LESPEA>
 
-    *   AnnoCPAN: Annotated CPAN documentation
+    *   AnnoCPAN
+
+        The AnnoCPAN is a website that allows community annonations of Perl
+        module documentation.
 
         <http://annocpan.org/dist/Task-BeLike-LESPEA>
 
     *   CPAN Ratings
 
+        The CPAN Ratings is a website that allows community ratings and
+        reviews of Perl modules.
+
         <http://cpanratings.perl.org/d/Task-BeLike-LESPEA>
 
     *   CPAN Forum
 
+        The CPAN Forum is a web forum for discussing Perl modules.
+
         <http://cpanforum.com/dist/Task-BeLike-LESPEA>
 
-    *   CPANTS Kwalitee
+    *   CPANTS
+
+        The CPANTS is a website that analyzes the Kwalitee ( code metrics )
+        of a distribution.
 
         <http://cpants.perl.org/dist/overview/Task-BeLike-LESPEA>
 
-    *   CPAN Testers Results
+    *   CPAN Testers
 
-        <http://cpantesters.org/distro/T/Task-BeLike-LESPEA.html>
+        The CPAN Testers is a network of smokers who run automated tests on
+        uploaded CPAN distributions.
+
+        <http://www.cpantesters.org/distro/T/Task-BeLike-LESPEA>
 
     *   CPAN Testers Matrix
 
+        The CPAN Testers Matrix is a website that provides a visual way to
+        determine what Perls/platforms PASSed for a distribution.
+
         <http://matrix.cpantesters.org/?dist=Task-BeLike-LESPEA>
+
+    *   CPAN Testers Dependencies
+
+        The CPAN Testers Dependencies is a website that shows a chart of the
+        test results of all dependencies for a distribution.
+
+        <http://deps.cpantesters.org/?module=Task::BeLike::LESPEA>
 
   Bugs / Feature Requests
     Please report any bugs or feature requests by email to
@@ -336,7 +281,7 @@ SUPPORT
       git clone git://github.com/lespea/task-belike-lespea.git
 
 COPYRIGHT AND LICENSE
-    This software is copyright (c) 2010 by Adam Lesperance.
+    This software is copyright (c) 2011 by Adam Lesperance.
 
     This is free software; you can redistribute it and/or modify it under
     the same terms as the Perl 5 programming language system itself.
