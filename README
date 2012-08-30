@@ -2,13 +2,12 @@ NAME
     Task::BeLike::LESPEA - Modules that LESPEA uses on a daily basis
 
 VERSION
-    version 2.001000
-
-  Builders
-    Module::Starter
-        Creates a skeleton of a bare module
+    version 2.002000
 
   Data Parsing
+    Excel::Writer::XLSX
+        Modern XLSX writer
+
     Spreadsheet::ParseExcel
         Read Microsoft xls files
 
@@ -18,6 +17,9 @@ VERSION
     Spreadsheet::WriteExcel
         Write Microsoft xls files
 
+    Spreadsheet::XLSX
+        Legacy XLSX writer
+
     Text::CSV_XS
         Parse CSV files, no matter how borked up they are
 
@@ -25,25 +27,241 @@ VERSION
     DBD::CSV
         Treat a CSV like a database
 
-    DBD::ODBC
-        Use Microsoft ODBC connections
-
     DBI Base database handler
 
   Dates
+    Date::Calc
+        Perform date calculations
+
+    Date::Manip
+        Work with dates
+
+    DateTime
+        Base date object
+
+    DateTime::Format::DB2
+        Convert various strings to datetime objects
+
+    DateTime::Format::DBI
+        Convert various strings to datetime objects
+
+    DateTime::Format::DateManip
+        Convert various strings to datetime objects
+
     DateTime::Format::DateParse
-        Takes a string and makes a DateTime object out of it
+        Convert various strings to datetime objects
+
+    DateTime::Format::Duration
+        Convert various strings to datetime objects
+
+    DateTime::Format::Duration::DurationString
+        Convert various strings to datetime objects
+
+    DateTime::Format::Duration::XSD
+        Convert various strings to datetime objects
+
+    DateTime::Format::Epoch
+        Convert various strings to datetime objects
+
+    DateTime::Format::Epoch::ActiveDirectory
+        Convert various strings to datetime objects
+
+    DateTime::Format::Epoch::DotNet
+        Convert various strings to datetime objects
+
+    DateTime::Format::Epoch::JD
+        Convert various strings to datetime objects
+
+    DateTime::Format::Epoch::Lilian
+        Convert various strings to datetime objects
+
+    DateTime::Format::Epoch::MJD
+        Convert various strings to datetime objects
+
+    DateTime::Format::Epoch::MacOS
+        Convert various strings to datetime objects
+
+    DateTime::Format::Epoch::RJD
+        Convert various strings to datetime objects
+
+    DateTime::Format::Epoch::RataDie
+        Convert various strings to datetime objects
+
+    DateTime::Format::Epoch::TAI64
+        Convert various strings to datetime objects
+
+    DateTime::Format::Epoch::TJD
+        Convert various strings to datetime objects
+
+    DateTime::Format::Epoch::Unix
+        Convert various strings to datetime objects
+
+    DateTime::Format::Excel
+        Convert various strings to datetime objects
+
+    DateTime::Format::Flexible
+        Convert various strings to datetime objects
+
+    DateTime::Format::HTTP
+        Convert various strings to datetime objects
+
+    DateTime::Format::Human
+        Convert various strings to datetime objects
+
+    DateTime::Format::Human::Duration
+        Convert various strings to datetime objects
+
+    DateTime::Format::ICal
+        Convert various strings to datetime objects
+
+    DateTime::Format::ISO8601
+        Convert various strings to datetime objects
+
+    DateTime::Format::MSSQL
+        Convert various strings to datetime objects
+
+    DateTime::Format::MySQL
+        Convert various strings to datetime objects
+
+    DateTime::Format::Natural
+        Convert various strings to datetime objects
+
+    DateTime::Format::Natural::Aliases
+        Convert various strings to datetime objects
+
+    DateTime::Format::Natural::Calc
+        Convert various strings to datetime objects
+
+    DateTime::Format::Natural::Compat
+        Convert various strings to datetime objects
+
+    DateTime::Format::Natural::Duration
+        Convert various strings to datetime objects
+
+    DateTime::Format::Natural::Duration::Checks
+        Convert various strings to datetime objects
+
+    DateTime::Format::Natural::Expand
+        Convert various strings to datetime objects
+
+    DateTime::Format::Natural::Extract
+        Convert various strings to datetime objects
+
+    DateTime::Format::Natural::Formatted
+        Convert various strings to datetime objects
+
+    DateTime::Format::Natural::Helpers
+        Convert various strings to datetime objects
+
+    DateTime::Format::Natural::Lang::Base
+        Convert various strings to datetime objects
+
+    DateTime::Format::Natural::Lang::EN
+        Convert various strings to datetime objects
+
+    DateTime::Format::Natural::Rewrite
+        Convert various strings to datetime objects
+
+    DateTime::Format::Natural::Test
+        Convert various strings to datetime objects
+
+    DateTime::Format::Natural::Utils
+        Convert various strings to datetime objects
+
+    DateTime::Format::Natural::Wrappers
+        Convert various strings to datetime objects
+
+    DateTime::Format::Oracle
+        Convert various strings to datetime objects
+
+    DateTime::Format::Pg
+        Convert various strings to datetime objects
+
+    DateTime::Format::RFC3339
+        Convert various strings to datetime objects
+
+    DateTime::Format::RFC3501
+        Convert various strings to datetime objects
+
+    DateTime::Format::RSS
+        Convert various strings to datetime objects
+
+    DateTime::Format::Roman
+        Convert various strings to datetime objects
+
+    DateTime::Format::SQLite
+        Convert various strings to datetime objects
+
+    DateTime::Format::Strptime
+        Convert various strings to datetime objects
+
+    DateTime::Format::Sybase
+        Convert various strings to datetime objects
+
+    DateTime::Format::Variant
+        Convert various strings to datetime objects
+
+    DateTime::Format::W3CDTF
+        Convert various strings to datetime objects
+
+    DateTime::Format::WindowsFileTime
+        Convert various strings to datetime objects
+
+    DateTime::Format::XMLTV
+        Convert various strings to datetime objects
+
+    DateTime::Format::XSD
+        Convert various strings to datetime objects
+
+    DateTime::Format::x509
+        Convert various strings to datetime objects
 
   Development
+    Data::Printer
+        Very nice object printer
+
+    Devel::Cover
+        Make sure we test all our functions
+
     Devel::NYTProf
         Best profiler available! (by far)
 
+    Devel::REPL
+        Nicely interact with perl
+
+    Devel::REPL::Plugin::DataPrinter
+        Let us use a nice object printer
+
+    Module::Refresh
+        Reload a module from disk
+
+    Module::Reload
+        Reload a module from disk
+
+    Perl::Critic
+        Check our files for best practices
+
+    Perl::Tidy
+        Generate nice looking perl
+
   Dist::Zilla
     Dist::Zilla
-        Basic module
+        Base dist module
+
+    Dist::Zilla::App::Command::cover
+        Lets us easily check the test coverage
+
+    Dist::Zilla::App::Command::perltidy
+        Lets us pretty up our code
+
+    Dist::Zilla::App::Command::shell
+        Provides an interactive dzil shell
 
     Dist::Zilla::PluginBundle::Author::LESPEA
         My dzil config
+
+    Dist::Zilla::Shell
+        Provides an interactive dzil shell
 
   Error Checking
     Try::Tiny
@@ -56,16 +274,39 @@ VERSION
     File::HomeDir
         Makes getting files out of the users' home directory super easy
 
+    File::Next
+        Iterate over files
+
     File::ShareDir
         Auto store/fetch files in the current modules' "private" folder
         structure once it's installed
 
   HTML stuff
+    Encode
+        Encoding helper
+
+    HTML::Entities
+        Help us with html entities
+
     HTML::Tree
         Build a huge tree out of the HTML Dom
 
     HTML::TreeBuilder::XPath
         Do some xpath lookups for an HTML tree
+
+    LWP Get stuff from the internet
+
+    LWP::Protocol::https
+        Connecto to https sites
+
+    PPI::HTML
+        Turn perl into a nice html page
+
+    Template
+        Template module for generating files safely
+
+    WWW::Mechanize
+        Automate website crawling
 
   Installers
     Exporter::Easy
@@ -101,27 +342,81 @@ VERSION
         Compute factors of a number
 
   Moose
+    Any::Moose
+        Use either moose or mouse
+
     Getopt::Long::Descriptive
         Required for MooseX::App::Cmd
 
     Moose
         Base moose module
 
+    Moose::Meta::Attribute::Native
+        Treat attributes like they were native objects
+
+    MooseX::Aliases
+        Make it easier to create objects
+
+    MooseX::App
+        Turn your object(s) into an app
+
     MooseX::App::Cmd
         Extend your moose object as a script
+
+    MooseX::Log::Log4perl
+        Easy logging injector
 
     MooseX::Method::Signatures
         Adds greate parameter varification to methods (with a performance
         price)
 
+    MooseX::Singleton
+        Easily create a singleton object (good for caches)
+
+    MooseX::StrictConstructor
+        Ensure passed hash items are valid attributes
+
+    MooseX::Types
+        Basic moose types
+
     MooseX::Types::Common
         As it sounds, common types for Moose
 
-    MooseX::Types::DateTimeX
-        Awesome DateTime parser
+    MooseX::Types::Common::Numeric
+        As it sounds, common numeric types for Moose
+
+    MooseX::Types::Common::String
+        As it sounds, common string types for Moose
+
+    MooseX::Types::DateTime::ButMaintained
+        Datetime type
+
+    MooseX::Types::Email
+        Contains an email address
+
+    MooseX::Types::IPv4
+        IP Address
+
+    MooseX::Types::JSON
+        A JSON string
+
+    MooseX::Types::NetAddr::IP
+        Alternative to IPv4
+
+    MooseX::Types::PortNumber
+        A valid port number
 
     MooseX::Types::Structured
         Lets you write enforce structured attributes better than base Moose
+
+    MooseX::Types::URI
+        A valid URI address string
+
+    MooseX::Types::UUID
+        A valid UUID string
+
+    MouseX::Types
+        Basic mouse types
 
   Networking
     Net::CIDR::Lite
@@ -140,11 +435,23 @@ VERSION
         Simple pinger
 
   Testing
-    Perl::Critic
-        Follow best practices
+    Test::Fatal
+        Make sure something dies okay
+
+    Test::File
+        Test a file for wanted attributes
+
+    Test::LeakTrace
+        Don't leak memory
+
+    Test::Memory::Cycle
+        Make sure you don't have any cyclical data structures
 
     Test::Most
         A whole bunch of tests modules
+
+    Test::Output
+        Make sure a script outputs the correct values
 
     Test::Perl::Critic
         Follow best practices
@@ -155,12 +462,48 @@ VERSION
     Test::Pod::Coverage
         Make sure you document all of your functions
 
+    Test::Taint
+        Ensure taint handling is done correctly
+
+  Threading
+    AnyEvent
+        Use whatever event module is best
+
+    Async::Interrupt
+        Thread helper
+
+    Coro
+        The best threading module out there
+
+    EV  Enhanced event handling module
+
+    Event
+        Basic event handling module
+
+    Guard
+        Thread helper
+
   Utils
     File::Slurp
         Read in an entire file all at once
 
+    IO::Scalar
+        Turn scalars into io objects
+
+    List::AllUtils
+        For those of us that can't remember which one to use
+
+    List::Gen
+        Very good list processing helper
+
     List::MoreUtils
         Provides some advanced-ish list utilities
+
+    Locale::US
+        Some handy locales for America
+
+    Modern::Perl
+        Turn on new features
 
     Readonly::XS
         Marks variables readonly... better than constant for some things
@@ -168,8 +511,33 @@ VERSION
     Regexp::Common
         A ton of precompiled regular expressions
 
+    Scalar::Util
+        Additional scalar helpers
+
+    Task::Weaken
+        Let us create weak objects
+
+    Text::Trim
+        Enhanced trimming capabilities
+
+    autovivification
+        Makes working with hashes easier
+
     namespace::autoclean
         Cleans up the namespace of your modules
+
+  XML
+    XML::LibXML
+        Base XML module
+
+    XML::SAX
+        Stream handling
+
+    XML::Simple
+        Even more simple than twig
+
+    XML::Twig
+        Make XML easy
 
   YAML
     YAML
@@ -202,6 +570,13 @@ SUPPORT
     be of help to you. As always, in addition to those websites please use
     your favorite search engine to discover more resources.
 
+    *   MetaCPAN
+
+        A modern, open-source CPAN search engine, useful to view POD in HTML
+        format.
+
+        <http://metacpan.org/release/Task-BeLike-LESPEA>
+
     *   Search CPAN
 
         The default CPAN search engine, useful to view POD in HTML format.
@@ -217,7 +592,7 @@ SUPPORT
 
     *   AnnoCPAN
 
-        The AnnoCPAN is a website that allows community annonations of Perl
+        The AnnoCPAN is a website that allows community annotations of Perl
         module documentation.
 
         <http://annocpan.org/dist/Task-BeLike-LESPEA>
@@ -251,8 +626,8 @@ SUPPORT
 
     *   CPAN Testers Matrix
 
-        The CPAN Testers Matrix is a website that provides a visual way to
-        determine what Perls/platforms PASSed for a distribution.
+        The CPAN Testers Matrix is a website that provides a visual overview
+        of the test results for a distribution on various Perls/platforms.
 
         <http://matrix.cpantesters.org/?dist=Task-BeLike-LESPEA>
 
@@ -281,7 +656,7 @@ SUPPORT
       git clone git://github.com/lespea/task-belike-lespea.git
 
 COPYRIGHT AND LICENSE
-    This software is copyright (c) 2011 by Adam Lesperance.
+    This software is copyright (c) 2012 by Adam Lesperance.
 
     This is free software; you can redistribute it and/or modify it under
     the same terms as the Perl 5 programming language system itself.
