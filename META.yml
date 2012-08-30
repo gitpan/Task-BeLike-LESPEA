@@ -213,7 +213,7 @@ resources:
   bugtracker: https://rt.cpan.org/Public/Dist/Display.html?Name=Task-BeLike-LESPEA
   homepage: http://search.cpan.org/dist/Task-BeLike-LESPEA
   repository: git://github.com/lespea/task-belike-lespea.git
-version: 2.002000
+version: 2.002001
 x_Dist_Zilla:
   plugins:
     -

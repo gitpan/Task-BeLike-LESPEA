@@ -20,7 +20,7 @@ my %module_build_args = (
     "Adam Lesperance <lespea\@gmail.com>"
   ],
   "dist_name" => "Task-BeLike-LESPEA",
-  "dist_version" => "2.002000",
+  "dist_version" => "2.002001",
   "license" => "perl",
   "module_name" => "Task::BeLike::LESPEA",
   "recommends" => {},

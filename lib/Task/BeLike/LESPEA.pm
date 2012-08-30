@@ -4,13 +4,14 @@ use utf8;
 
 package Task::BeLike::LESPEA;
 {
-  $Task::BeLike::LESPEA::VERSION = '2.002000';
+  $Task::BeLike::LESPEA::VERSION = '2.002001';
 }
 BEGIN {
   $Task::BeLike::LESPEA::AUTHORITY = 'cpan:LESPEA';
 }
 
 # ABSTRACT: Modules that LESPEA uses on a daily basis
+
 
 1;
 
@@ -24,9 +25,11 @@ Task::BeLike::LESPEA - Modules that LESPEA uses on a daily basis
 
 =head1 VERSION
 
-version 2.002000
+version 2.002001
 
 =encoding utf8
+
+=head1 Modules
 
 =head2 Data Parsing
 

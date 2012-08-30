@@ -11,7 +11,6 @@ README
 README.html
 dist.ini
 examples/example.pl
-gen_module.pl
 lib/Task/BeLike/LESPEA.pm
 perlcritic.rc
 ppm_install.bat
