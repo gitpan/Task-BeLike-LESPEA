@@ -2,7 +2,7 @@ NAME
     Task::BeLike::LESPEA - Modules that LESPEA uses on a daily basis
 
 VERSION
-    version 2.002001
+    version 2.003000
 
 Modules
   Data Parsing
@@ -67,31 +67,7 @@ Modules
     DateTime::Format::Epoch::ActiveDirectory
         Convert various strings to datetime objects
 
-    DateTime::Format::Epoch::DotNet
-        Convert various strings to datetime objects
-
-    DateTime::Format::Epoch::JD
-        Convert various strings to datetime objects
-
-    DateTime::Format::Epoch::Lilian
-        Convert various strings to datetime objects
-
-    DateTime::Format::Epoch::MJD
-        Convert various strings to datetime objects
-
     DateTime::Format::Epoch::MacOS
-        Convert various strings to datetime objects
-
-    DateTime::Format::Epoch::RJD
-        Convert various strings to datetime objects
-
-    DateTime::Format::Epoch::RataDie
-        Convert various strings to datetime objects
-
-    DateTime::Format::Epoch::TAI64
-        Convert various strings to datetime objects
-
-    DateTime::Format::Epoch::TJD
         Convert various strings to datetime objects
 
     DateTime::Format::Epoch::Unix
@@ -110,9 +86,6 @@ Modules
         Convert various strings to datetime objects
 
     DateTime::Format::Human::Duration
-        Convert various strings to datetime objects
-
-    DateTime::Format::ICal
         Convert various strings to datetime objects
 
     DateTime::Format::ISO8601
@@ -199,25 +172,16 @@ Modules
     DateTime::Format::Sybase
         Convert various strings to datetime objects
 
-    DateTime::Format::Variant
-        Convert various strings to datetime objects
-
-    DateTime::Format::W3CDTF
-        Convert various strings to datetime objects
-
     DateTime::Format::WindowsFileTime
-        Convert various strings to datetime objects
-
-    DateTime::Format::XMLTV
         Convert various strings to datetime objects
 
     DateTime::Format::XSD
         Convert various strings to datetime objects
 
-    DateTime::Format::x509
-        Convert various strings to datetime objects
-
   Development
+    Data::Dumper::Perltidy
+        Some nice formatting for Data::Dumper
+
     Data::Printer
         Very nice object printer
 
@@ -434,6 +398,9 @@ Modules
 
     Net::Ping
         Simple pinger
+
+    NetAddr::MAC
+        Process MAC addresses
 
   Testing
     Test::Fatal

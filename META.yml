@@ -34,6 +34,7 @@ requires:
   Coro: 0.000000
   DBD::CSV: 0.000000
   DBI: 0.000000
+  Data::Dumper::Perltidy: 0.000000
   Data::Printer: 0.000000
   Date::Calc: 0.000000
   Date::Manip: 0.000000
@@ -47,22 +48,13 @@ requires:
   DateTime::Format::Duration::XSD: 0.000000
   DateTime::Format::Epoch: 0.000000
   DateTime::Format::Epoch::ActiveDirectory: 0.000000
-  DateTime::Format::Epoch::DotNet: 0.000000
-  DateTime::Format::Epoch::JD: 0.000000
-  DateTime::Format::Epoch::Lilian: 0.000000
-  DateTime::Format::Epoch::MJD: 0.000000
   DateTime::Format::Epoch::MacOS: 0.000000
-  DateTime::Format::Epoch::RJD: 0.000000
-  DateTime::Format::Epoch::RataDie: 0.000000
-  DateTime::Format::Epoch::TAI64: 0.000000
-  DateTime::Format::Epoch::TJD: 0.000000
   DateTime::Format::Epoch::Unix: 0.000000
   DateTime::Format::Excel: 0.000000
   DateTime::Format::Flexible: 0.000000
   DateTime::Format::HTTP: 0.000000
   DateTime::Format::Human: 0.000000
   DateTime::Format::Human::Duration: 0.000000
-  DateTime::Format::ICal: 0.000000
   DateTime::Format::ISO8601: 0.000000
   DateTime::Format::MSSQL: 0.000000
   DateTime::Format::MySQL: 0.000000
@@ -91,12 +83,8 @@ requires:
   DateTime::Format::SQLite: 0.000000
   DateTime::Format::Strptime: 0.000000
   DateTime::Format::Sybase: 0.000000
-  DateTime::Format::Variant: 0.000000
-  DateTime::Format::W3CDTF: 0.000000
   DateTime::Format::WindowsFileTime: 0.000000
-  DateTime::Format::XMLTV: 0.000000
   DateTime::Format::XSD: 0.000000
-  DateTime::Format::x509: 0.000000
   Devel::Cover: 0.000000
   Devel::NYTProf: 0.000000
   Devel::REPL: 0.000000
@@ -105,7 +93,7 @@ requires:
   Dist::Zilla::App::Command::cover: 0.000000
   Dist::Zilla::App::Command::perltidy: 0.000000
   Dist::Zilla::App::Command::shell: 0.000000
-  Dist::Zilla::PluginBundle::Author::LESPEA: 1.003000
+  Dist::Zilla::PluginBundle::Author::LESPEA: 1.005001
   Dist::Zilla::Shell: 0.000000
   EV: 0.000000
   Encode: 0.000000
@@ -168,6 +156,7 @@ requires:
   Net::IP: 0.000000
   Net::Netmask: 0.000000
   Net::Ping: 0.000000
+  NetAddr::MAC: 0.000000
   PPI::HTML: 0.000000
   Perl::Critic: 0.000000
   Perl::Tidy: 0.000000
@@ -213,7 +202,7 @@ resources:
   bugtracker: https://rt.cpan.org/Public/Dist/Display.html?Name=Task-BeLike-LESPEA
   homepage: http://search.cpan.org/dist/Task-BeLike-LESPEA
   repository: git://github.com/lespea/task-belike-lespea.git
-version: 2.002001
+version: 2.003000
 x_Dist_Zilla:
   plugins:
     -
@@ -285,17 +274,9 @@ x_Dist_Zilla:
       name: '@Author::LESPEA/@Filter/Test::DistManifest'
       version: 2.000002
     -
-      class: Dist::Zilla::Plugin::EOLTests
-      name: '@Author::LESPEA/@Filter/EOLTests'
-      version: 0.02
-    -
       class: Dist::Zilla::Plugin::HasVersionTests
       name: '@Author::LESPEA/@Filter/HasVersionTests'
       version: 1.101420
-    -
-      class: Dist::Zilla::Plugin::Test::Kwalitee
-      name: '@Author::LESPEA/@Filter/Test::Kwalitee'
-      version: 2.03
     -
       class: Dist::Zilla::Plugin::MetaTests
       name: '@Author::LESPEA/@Filter/MetaTests'
@@ -319,10 +300,6 @@ x_Dist_Zilla:
     -
       class: Dist::Zilla::Plugin::Test::Portability
       name: '@Author::LESPEA/@Filter/Test::Portability'
-      version: 2.000003
-    -
-      class: Dist::Zilla::Plugin::Test::UnusedVars
-      name: '@Author::LESPEA/@Filter/Test::UnusedVars'
       version: 2.000003
     -
       class: Dist::Zilla::Plugin::Test::CPAN::Changes
@@ -413,14 +390,6 @@ x_Dist_Zilla:
       name: '@Author::LESPEA/@Filter/ConfirmRelease'
       version: 4.300021
     -
-      class: Dist::Zilla::Plugin::Test::Pod::No404s
-      name: Test::Pod::No404s
-      version: 1.001
-    -
-      class: Dist::Zilla::Plugin::Test::Pod::LinkCheck
-      name: Test::Pod::LinkCheck
-      version: 1.001
-    -
       class: Dist::Zilla::Plugin::Prereqs
       config:
         Dist::Zilla::Plugin::Prereqs:
@@ -431,19 +400,19 @@ x_Dist_Zilla:
     -
       class: Dist::Zilla::Plugin::Git::Check
       name: Git::Check
-      version: 1.121820
+      version: 1.122460
     -
       class: Dist::Zilla::Plugin::Git::Commit
       name: Commit_Changes
-      version: 1.121820
+      version: 1.122460
     -
       class: Dist::Zilla::Plugin::Git::Tag
       name: Git::Tag
-      version: 1.121820
+      version: 1.122460
     -
       class: Dist::Zilla::Plugin::Git::Push
       name: Git::Push
-      version: 1.121820
+      version: 1.122460
     -
       class: Dist::Zilla::Plugin::FinderCode
       name: ':InstallModules'

@@ -4,7 +4,7 @@ use utf8;
 
 package Task::BeLike::LESPEA;
 {
-  $Task::BeLike::LESPEA::VERSION = '2.002001';
+  $Task::BeLike::LESPEA::VERSION = '2.003000';
 }
 BEGIN {
   $Task::BeLike::LESPEA::AUTHORITY = 'cpan:LESPEA';
@@ -25,7 +25,7 @@ Task::BeLike::LESPEA - Modules that LESPEA uses on a daily basis
 
 =head1 VERSION
 
-version 2.002001
+version 2.003000
 
 =encoding utf8
 
@@ -127,39 +127,7 @@ Convert various strings to datetime objects
 
 Convert various strings to datetime objects
 
-=item L<DateTime::Format::Epoch::DotNet|DateTime::Format::Epoch::DotNet>
-
-Convert various strings to datetime objects
-
-=item L<DateTime::Format::Epoch::JD|DateTime::Format::Epoch::JD>
-
-Convert various strings to datetime objects
-
-=item L<DateTime::Format::Epoch::Lilian|DateTime::Format::Epoch::Lilian>
-
-Convert various strings to datetime objects
-
-=item L<DateTime::Format::Epoch::MJD|DateTime::Format::Epoch::MJD>
-
-Convert various strings to datetime objects
-
 =item L<DateTime::Format::Epoch::MacOS|DateTime::Format::Epoch::MacOS>
-
-Convert various strings to datetime objects
-
-=item L<DateTime::Format::Epoch::RJD|DateTime::Format::Epoch::RJD>
-
-Convert various strings to datetime objects
-
-=item L<DateTime::Format::Epoch::RataDie|DateTime::Format::Epoch::RataDie>
-
-Convert various strings to datetime objects
-
-=item L<DateTime::Format::Epoch::TAI64|DateTime::Format::Epoch::TAI64>
-
-Convert various strings to datetime objects
-
-=item L<DateTime::Format::Epoch::TJD|DateTime::Format::Epoch::TJD>
 
 Convert various strings to datetime objects
 
@@ -184,10 +152,6 @@ Convert various strings to datetime objects
 Convert various strings to datetime objects
 
 =item L<DateTime::Format::Human::Duration|DateTime::Format::Human::Duration>
-
-Convert various strings to datetime objects
-
-=item L<DateTime::Format::ICal|DateTime::Format::ICal>
 
 Convert various strings to datetime objects
 
@@ -303,27 +267,11 @@ Convert various strings to datetime objects
 
 Convert various strings to datetime objects
 
-=item L<DateTime::Format::Variant|DateTime::Format::Variant>
-
-Convert various strings to datetime objects
-
-=item L<DateTime::Format::W3CDTF|DateTime::Format::W3CDTF>
-
-Convert various strings to datetime objects
-
 =item L<DateTime::Format::WindowsFileTime|DateTime::Format::WindowsFileTime>
 
 Convert various strings to datetime objects
 
-=item L<DateTime::Format::XMLTV|DateTime::Format::XMLTV>
-
-Convert various strings to datetime objects
-
 =item L<DateTime::Format::XSD|DateTime::Format::XSD>
-
-Convert various strings to datetime objects
-
-=item L<DateTime::Format::x509|DateTime::Format::x509>
 
 Convert various strings to datetime objects
 
@@ -332,6 +280,10 @@ Convert various strings to datetime objects
 =head2 Development
 
 =over 4
+
+=item L<Data::Dumper::Perltidy|Data::Dumper::Perltidy>
+
+Some nice formatting for Data::Dumper
 
 =item L<Data::Printer|Data::Printer>
 
@@ -662,6 +614,10 @@ Yet another IP manip tool
 =item L<Net::Ping|Net::Ping>
 
 Simple pinger
+
+=item L<NetAddr::MAC|NetAddr::MAC>
+
+Process MAC addresses
 
 =back
 
