@@ -2,7 +2,7 @@ NAME
     Task::BeLike::LESPEA - Modules that LESPEA uses on a daily basis
 
 VERSION
-    version 2.003000
+    version 2.004000
 
 Modules
   Data Parsing
@@ -11,9 +11,6 @@ Modules
 
     Spreadsheet::ParseExcel
         Read Microsoft xls files
-
-    Spreadsheet::Read
-        Write a wide variety of 'spreadsheets'
 
     Spreadsheet::WriteExcel
         Write Microsoft xls files

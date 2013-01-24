@@ -4,7 +4,7 @@ use utf8;
 
 package Task::BeLike::LESPEA;
 {
-  $Task::BeLike::LESPEA::VERSION = '2.003000';
+  $Task::BeLike::LESPEA::VERSION = '2.004000';
 }
 BEGIN {
   $Task::BeLike::LESPEA::AUTHORITY = 'cpan:LESPEA';
@@ -25,7 +25,7 @@ Task::BeLike::LESPEA - Modules that LESPEA uses on a daily basis
 
 =head1 VERSION
 
-version 2.003000
+version 2.004000
 
 =encoding utf8
 
@@ -42,10 +42,6 @@ Modern XLSX writer
 =item L<Spreadsheet::ParseExcel|Spreadsheet::ParseExcel>
 
 Read Microsoft xls files
-
-=item L<Spreadsheet::Read|Spreadsheet::Read>
-
-Write a wide variety of 'spreadsheets'
 
 =item L<Spreadsheet::WriteExcel|Spreadsheet::WriteExcel>
 

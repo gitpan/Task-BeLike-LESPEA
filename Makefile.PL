@@ -161,7 +161,6 @@ my %WriteMakefileArgs = (
     "Regexp::Common" => "0.000000",
     "Scalar::Util" => "0.000000",
     "Spreadsheet::ParseExcel" => "0.000000",
-    "Spreadsheet::Read" => "0.000000",
     "Spreadsheet::WriteExcel" => "0.000000",
     "Spreadsheet::XLSX" => "0.000000",
     "Task::Weaken" => "0.000000",
@@ -195,7 +194,7 @@ my %WriteMakefileArgs = (
     "utf8" => 0,
     "warnings" => 0
   },
-  "VERSION" => "2.003000",
+  "VERSION" => "2.004000",
   "test" => {
     "TESTS" => "t/*.t"
   }

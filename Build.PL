@@ -20,7 +20,7 @@ my %module_build_args = (
     "Adam Lesperance <lespea\@gmail.com>"
   ],
   "dist_name" => "Task-BeLike-LESPEA",
-  "dist_version" => "2.003000",
+  "dist_version" => "2.004000",
   "license" => "perl",
   "module_name" => "Task::BeLike::LESPEA",
   "recommends" => {},
@@ -162,7 +162,6 @@ my %module_build_args = (
     "Regexp::Common" => "0.000000",
     "Scalar::Util" => "0.000000",
     "Spreadsheet::ParseExcel" => "0.000000",
-    "Spreadsheet::Read" => "0.000000",
     "Spreadsheet::WriteExcel" => "0.000000",
     "Spreadsheet::XLSX" => "0.000000",
     "Task::Weaken" => "0.000000",
