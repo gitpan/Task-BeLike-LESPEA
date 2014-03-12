@@ -1,637 +1,831 @@
 NAME
+
     Task::BeLike::LESPEA - Modules that LESPEA uses on a daily basis
 
 VERSION
-    version 2.004000
+
+    version 2.005000
 
 Modules
-  Data Parsing
+
+ Data Parsing
+
     Excel::Writer::XLSX
-        Modern XLSX writer
+
+      Modern XLSX writer
 
     Spreadsheet::ParseExcel
-        Read Microsoft xls files
+
+      Read Microsoft xls files
 
     Spreadsheet::WriteExcel
-        Write Microsoft xls files
+
+      Write Microsoft xls files
 
     Spreadsheet::XLSX
-        Legacy XLSX writer
+
+      Legacy XLSX writer
 
     Text::CSV_XS
-        Parse CSV files, no matter how borked up they are
 
-  Database
+      Parse CSV files, no matter how borked up they are
+
+ Database
+
     DBD::CSV
-        Treat a CSV like a database
 
-    DBI Base database handler
+      Treat a CSV like a database
 
-  Dates
+    DBI
+
+      Base database handler
+
+ Dates
+
     Date::Calc
-        Perform date calculations
+
+      Perform date calculations
 
     Date::Manip
-        Work with dates
+
+      Work with dates
 
     DateTime
-        Base date object
+
+      Base date object
 
     DateTime::Format::DB2
-        Convert various strings to datetime objects
+
+      Convert various strings to datetime objects
 
     DateTime::Format::DBI
-        Convert various strings to datetime objects
+
+      Convert various strings to datetime objects
 
     DateTime::Format::DateManip
-        Convert various strings to datetime objects
+
+      Convert various strings to datetime objects
 
     DateTime::Format::DateParse
-        Convert various strings to datetime objects
+
+      Convert various strings to datetime objects
 
     DateTime::Format::Duration
-        Convert various strings to datetime objects
+
+      Convert various strings to datetime objects
 
     DateTime::Format::Duration::DurationString
-        Convert various strings to datetime objects
+
+      Convert various strings to datetime objects
 
     DateTime::Format::Duration::XSD
-        Convert various strings to datetime objects
+
+      Convert various strings to datetime objects
 
     DateTime::Format::Epoch
-        Convert various strings to datetime objects
+
+      Convert various strings to datetime objects
 
     DateTime::Format::Epoch::ActiveDirectory
-        Convert various strings to datetime objects
+
+      Convert various strings to datetime objects
 
     DateTime::Format::Epoch::MacOS
-        Convert various strings to datetime objects
+
+      Convert various strings to datetime objects
 
     DateTime::Format::Epoch::Unix
-        Convert various strings to datetime objects
+
+      Convert various strings to datetime objects
 
     DateTime::Format::Excel
-        Convert various strings to datetime objects
+
+      Convert various strings to datetime objects
 
     DateTime::Format::Flexible
-        Convert various strings to datetime objects
+
+      Convert various strings to datetime objects
 
     DateTime::Format::HTTP
-        Convert various strings to datetime objects
+
+      Convert various strings to datetime objects
 
     DateTime::Format::Human
-        Convert various strings to datetime objects
+
+      Convert various strings to datetime objects
 
     DateTime::Format::Human::Duration
-        Convert various strings to datetime objects
+
+      Convert various strings to datetime objects
 
     DateTime::Format::ISO8601
-        Convert various strings to datetime objects
+
+      Convert various strings to datetime objects
 
     DateTime::Format::MSSQL
-        Convert various strings to datetime objects
+
+      Convert various strings to datetime objects
 
     DateTime::Format::MySQL
-        Convert various strings to datetime objects
+
+      Convert various strings to datetime objects
 
     DateTime::Format::Natural
-        Convert various strings to datetime objects
 
-    DateTime::Format::Natural::Aliases
-        Convert various strings to datetime objects
+      Convert various strings to datetime objects
 
     DateTime::Format::Natural::Calc
-        Convert various strings to datetime objects
+
+      Convert various strings to datetime objects
 
     DateTime::Format::Natural::Compat
-        Convert various strings to datetime objects
+
+      Convert various strings to datetime objects
 
     DateTime::Format::Natural::Duration
-        Convert various strings to datetime objects
+
+      Convert various strings to datetime objects
 
     DateTime::Format::Natural::Duration::Checks
-        Convert various strings to datetime objects
+
+      Convert various strings to datetime objects
 
     DateTime::Format::Natural::Expand
-        Convert various strings to datetime objects
+
+      Convert various strings to datetime objects
 
     DateTime::Format::Natural::Extract
-        Convert various strings to datetime objects
+
+      Convert various strings to datetime objects
 
     DateTime::Format::Natural::Formatted
-        Convert various strings to datetime objects
+
+      Convert various strings to datetime objects
 
     DateTime::Format::Natural::Helpers
-        Convert various strings to datetime objects
+
+      Convert various strings to datetime objects
 
     DateTime::Format::Natural::Lang::Base
-        Convert various strings to datetime objects
+
+      Convert various strings to datetime objects
 
     DateTime::Format::Natural::Lang::EN
-        Convert various strings to datetime objects
+
+      Convert various strings to datetime objects
 
     DateTime::Format::Natural::Rewrite
-        Convert various strings to datetime objects
+
+      Convert various strings to datetime objects
 
     DateTime::Format::Natural::Test
-        Convert various strings to datetime objects
+
+      Convert various strings to datetime objects
 
     DateTime::Format::Natural::Utils
-        Convert various strings to datetime objects
+
+      Convert various strings to datetime objects
 
     DateTime::Format::Natural::Wrappers
-        Convert various strings to datetime objects
+
+      Convert various strings to datetime objects
 
     DateTime::Format::Oracle
-        Convert various strings to datetime objects
+
+      Convert various strings to datetime objects
 
     DateTime::Format::Pg
-        Convert various strings to datetime objects
+
+      Convert various strings to datetime objects
 
     DateTime::Format::RFC3339
-        Convert various strings to datetime objects
+
+      Convert various strings to datetime objects
 
     DateTime::Format::RFC3501
-        Convert various strings to datetime objects
+
+      Convert various strings to datetime objects
 
     DateTime::Format::RSS
-        Convert various strings to datetime objects
+
+      Convert various strings to datetime objects
 
     DateTime::Format::Roman
-        Convert various strings to datetime objects
+
+      Convert various strings to datetime objects
 
     DateTime::Format::SQLite
-        Convert various strings to datetime objects
+
+      Convert various strings to datetime objects
 
     DateTime::Format::Strptime
-        Convert various strings to datetime objects
+
+      Convert various strings to datetime objects
 
     DateTime::Format::Sybase
-        Convert various strings to datetime objects
+
+      Convert various strings to datetime objects
 
     DateTime::Format::WindowsFileTime
-        Convert various strings to datetime objects
+
+      Convert various strings to datetime objects
 
     DateTime::Format::XSD
-        Convert various strings to datetime objects
 
-  Development
+      Convert various strings to datetime objects
+
+ Development
+
     Data::Dumper::Perltidy
-        Some nice formatting for Data::Dumper
+
+      Some nice formatting for Data::Dumper
 
     Data::Printer
-        Very nice object printer
+
+      Very nice object printer
 
     Devel::Cover
-        Make sure we test all our functions
+
+      Make sure we test all our functions
 
     Devel::NYTProf
-        Best profiler available! (by far)
+
+      Best profiler available! (by far)
 
     Devel::REPL
-        Nicely interact with perl
+
+      Nicely interact with perl
 
     Devel::REPL::Plugin::DataPrinter
-        Let us use a nice object printer
+
+      Let us use a nice object printer
 
     Module::Refresh
-        Reload a module from disk
+
+      Reload a module from disk
 
     Module::Reload
-        Reload a module from disk
+
+      Reload a module from disk
 
     Perl::Critic
-        Check our files for best practices
+
+      Check our files for best practices
 
     Perl::Tidy
-        Generate nice looking perl
 
-  Dist::Zilla
+      Generate nice looking perl
+
+ Dist::Zilla
+
     Dist::Zilla
-        Base dist module
+
+      Base dist module
 
     Dist::Zilla::App::Command::cover
-        Lets us easily check the test coverage
+
+      Lets us easily check the test coverage
 
     Dist::Zilla::App::Command::perltidy
-        Lets us pretty up our code
+
+      Lets us pretty up our code
 
     Dist::Zilla::App::Command::shell
-        Provides an interactive dzil shell
+
+      Provides an interactive dzil shell
 
     Dist::Zilla::PluginBundle::Author::LESPEA
-        My dzil config
+
+      My dzil config
 
     Dist::Zilla::Shell
-        Provides an interactive dzil shell
 
-  Error Checking
+      Provides an interactive dzil shell
+
+ Error Checking
+
     Try::Tiny
-        At least some basic error checking
+
+      At least some basic error checking
 
     autodie
-        Smart failures in the event a file/dir read/write fails - automagic!
 
-  File handling
+      Smart failures in the event a file/dir read/write fails - automagic!
+
+ File handling
+
     File::HomeDir
-        Makes getting files out of the users' home directory super easy
+
+      Makes getting files out of the users' home directory super easy
 
     File::Next
-        Iterate over files
+
+      Iterate over files
 
     File::ShareDir
-        Auto store/fetch files in the current modules' "private" folder
-        structure once it's installed
 
-  HTML stuff
+      Auto store/fetch files in the current modules' "private" folder
+      structure once it's installed
+
+ HTML stuff
+
     Encode
-        Encoding helper
+
+      Encoding helper
 
     HTML::Entities
-        Help us with html entities
+
+      Help us with html entities
 
     HTML::Tree
-        Build a huge tree out of the HTML Dom
+
+      Build a huge tree out of the HTML Dom
 
     HTML::TreeBuilder::XPath
-        Do some xpath lookups for an HTML tree
 
-    LWP Get stuff from the internet
+      Do some xpath lookups for an HTML tree
+
+    LWP
+
+      Get stuff from the internet
 
     LWP::Protocol::https
-        Connecto to https sites
+
+      Connecto to https sites
 
     PPI::HTML
-        Turn perl into a nice html page
+
+      Turn perl into a nice html page
 
     Template
-        Template module for generating files safely
+
+      Template module for generating files safely
 
     WWW::Mechanize
-        Automate website crawling
 
-  Installers
+      Automate website crawling
+
+ Installers
+
     Exporter::Easy
-        Makes exporting functions a snap
+
+      Makes exporting functions a snap
 
     Module::Build
-        Pure perl installer
+
+      Pure perl installer
 
     Module::Install
-        Extension of MakeMaker
+
+      Extension of MakeMaker
 
     Module::Install::AuthorTests
-        Run author tests
+
+      Run author tests
 
     Module::Install::ExtraTests
-        Run extra tests
 
-  JSON
+      Run extra tests
+
+ JSON
+
     JSON
-        Basic perl module to parse JSON
+
+      Basic perl module to parse JSON
 
     JSON::Any
-        Auto use the best available JSON module
+
+      Auto use the best available JSON module
 
     JSON::XS
-        Fast C module to parse JSON
 
-  Math
+      Fast C module to parse JSON
+
+ Math
+
     Math::Big
-        Easily compute math with big ints
+
+      Easily compute math with big ints
 
     Math::Big::Factors
-        Compute factors of a number
 
-  Moose
+      Compute factors of a number
+
+ Moose
+
     Any::Moose
-        Use either moose or mouse
+
+      Use either moose or mouse
 
     Getopt::Long::Descriptive
-        Required for MooseX::App::Cmd
+
+      Required for MooseX::App::Cmd
 
     Moose
-        Base moose module
+
+      Base moose module
 
     Moose::Meta::Attribute::Native
-        Treat attributes like they were native objects
+
+      Treat attributes like they were native objects
 
     MooseX::Aliases
-        Make it easier to create objects
+
+      Make it easier to create objects
 
     MooseX::App
-        Turn your object(s) into an app
+
+      Turn your object(s) into an app
 
     MooseX::App::Cmd
-        Extend your moose object as a script
+
+      Extend your moose object as a script
 
     MooseX::Log::Log4perl
-        Easy logging injector
+
+      Easy logging injector
 
     MooseX::Method::Signatures
-        Adds greate parameter varification to methods (with a performance
-        price)
+
+      Adds greate parameter varification to methods (with a performance
+      price)
 
     MooseX::Singleton
-        Easily create a singleton object (good for caches)
+
+      Easily create a singleton object (good for caches)
 
     MooseX::StrictConstructor
-        Ensure passed hash items are valid attributes
+
+      Ensure passed hash items are valid attributes
 
     MooseX::Types
-        Basic moose types
+
+      Basic moose types
 
     MooseX::Types::Common
-        As it sounds, common types for Moose
+
+      As it sounds, common types for Moose
 
     MooseX::Types::Common::Numeric
-        As it sounds, common numeric types for Moose
+
+      As it sounds, common numeric types for Moose
 
     MooseX::Types::Common::String
-        As it sounds, common string types for Moose
+
+      As it sounds, common string types for Moose
 
     MooseX::Types::DateTime::ButMaintained
-        Datetime type
+
+      Datetime type
 
     MooseX::Types::Email
-        Contains an email address
+
+      Contains an email address
 
     MooseX::Types::IPv4
-        IP Address
+
+      IP Address
 
     MooseX::Types::JSON
-        A JSON string
+
+      A JSON string
 
     MooseX::Types::NetAddr::IP
-        Alternative to IPv4
+
+      Alternative to IPv4
 
     MooseX::Types::PortNumber
-        A valid port number
+
+      A valid port number
 
     MooseX::Types::Structured
-        Lets you write enforce structured attributes better than base Moose
+
+      Lets you write enforce structured attributes better than base Moose
 
     MooseX::Types::URI
-        A valid URI address string
+
+      A valid URI address string
 
     MooseX::Types::UUID
-        A valid UUID string
+
+      A valid UUID string
 
     MouseX::Types
-        Basic mouse types
 
-  Networking
+      Basic mouse types
+
+ Networking
+
     Net::CIDR::Lite
-        Great CIDR calculation tool
+
+      Great CIDR calculation tool
 
     Net::DNS
-        Do some DNS lookups
+
+      Do some DNS lookups
 
     Net::IP
-        Manip IP address
+
+      Manip IP address
 
     Net::Netmask
-        Yet another IP manip tool
+
+      Yet another IP manip tool
 
     Net::Ping
-        Simple pinger
+
+      Simple pinger
 
     NetAddr::MAC
-        Process MAC addresses
 
-  Testing
+      Process MAC addresses
+
+ Testing
+
     Test::Fatal
-        Make sure something dies okay
+
+      Make sure something dies okay
 
     Test::File
-        Test a file for wanted attributes
+
+      Test a file for wanted attributes
 
     Test::LeakTrace
-        Don't leak memory
+
+      Don't leak memory
 
     Test::Memory::Cycle
-        Make sure you don't have any cyclical data structures
+
+      Make sure you don't have any cyclical data structures
 
     Test::Most
-        A whole bunch of tests modules
+
+      A whole bunch of tests modules
 
     Test::Output
-        Make sure a script outputs the correct values
+
+      Make sure a script outputs the correct values
 
     Test::Perl::Critic
-        Follow best practices
+
+      Follow best practices
 
     Test::Pod
-        Ensures your POD compiles ok
+
+      Ensures your POD compiles ok
 
     Test::Pod::Coverage
-        Make sure you document all of your functions
+
+      Make sure you document all of your functions
 
     Test::Taint
-        Ensure taint handling is done correctly
 
-  Threading
+      Ensure taint handling is done correctly
+
+ Threading
+
     AnyEvent
-        Use whatever event module is best
+
+      Use whatever event module is best
 
     Async::Interrupt
-        Thread helper
+
+      Thread helper
 
     Coro
-        The best threading module out there
 
-    EV  Enhanced event handling module
+      The best threading module out there
+
+    EV
+
+      Enhanced event handling module
 
     Event
-        Basic event handling module
+
+      Basic event handling module
 
     Guard
-        Thread helper
 
-  Utils
+      Thread helper
+
+ Utils
+
     File::Slurp
-        Read in an entire file all at once
+
+      Read in an entire file all at once
 
     IO::Scalar
-        Turn scalars into io objects
+
+      Turn scalars into io objects
 
     List::AllUtils
-        For those of us that can't remember which one to use
+
+      For those of us that can't remember which one to use
 
     List::Gen
-        Very good list processing helper
+
+      Very good list processing helper
 
     List::MoreUtils
-        Provides some advanced-ish list utilities
+
+      Provides some advanced-ish list utilities
 
     Locale::US
-        Some handy locales for America
+
+      Some handy locales for America
 
     Modern::Perl
-        Turn on new features
+
+      Turn on new features
 
     Readonly::XS
-        Marks variables readonly... better than constant for some things
+
+      Marks variables readonly... better than constant for some things
 
     Regexp::Common
-        A ton of precompiled regular expressions
+
+      A ton of precompiled regular expressions
 
     Scalar::Util
-        Additional scalar helpers
+
+      Additional scalar helpers
 
     Task::Weaken
-        Let us create weak objects
+
+      Let us create weak objects
 
     Text::Trim
-        Enhanced trimming capabilities
+
+      Enhanced trimming capabilities
 
     autovivification
-        Makes working with hashes easier
+
+      Makes working with hashes easier
 
     namespace::autoclean
-        Cleans up the namespace of your modules
 
-  XML
+      Cleans up the namespace of your modules
+
+ XML
+
     XML::LibXML
-        Base XML module
+
+      Base XML module
 
     XML::SAX
-        Stream handling
+
+      Stream handling
 
     XML::Simple
-        Even more simple than twig
+
+      Even more simple than twig
 
     XML::Twig
-        Make XML easy
 
-  YAML
+      Make XML easy
+
+ YAML
+
     YAML
-        Basic perl module to parse YAML
+
+      Basic perl module to parse YAML
 
     YAML::Any
-        Auto use the best available YAML module
+
+      Auto use the best available YAML module
 
     YAML::Syck
-        Another fast module to parse YAML
+
+      Another fast module to parse YAML
 
     YAML::XS
-        Fast C module to parse JSON
+
+      Fast C module to parse JSON
 
 INSTALLATION
+
     See perlmodinstall for information and options on installing Perl
     modules.
 
 AUTHOR
+
     Adam Lesperance <lespea@gmail.com>
 
 SUPPORT
-  Perldoc
+
+ Perldoc
+
     You can find documentation for this module with the perldoc command.
 
       perldoc Task::BeLike::LESPEA
 
-  Websites
+ Websites
+
     The following websites have more information about this module, and may
     be of help to you. As always, in addition to those websites please use
     your favorite search engine to discover more resources.
 
-    *   MetaCPAN
+      * MetaCPAN
 
-        A modern, open-source CPAN search engine, useful to view POD in HTML
-        format.
+      A modern, open-source CPAN search engine, useful to view POD in HTML
+      format.
 
-        <http://metacpan.org/release/Task-BeLike-LESPEA>
+      http://metacpan.org/release/Task-BeLike-LESPEA
 
-    *   Search CPAN
+      * Search CPAN
 
-        The default CPAN search engine, useful to view POD in HTML format.
+      The default CPAN search engine, useful to view POD in HTML format.
 
-        <http://search.cpan.org/dist/Task-BeLike-LESPEA>
+      http://search.cpan.org/dist/Task-BeLike-LESPEA
 
-    *   RT: CPAN's Bug Tracker
+      * RT: CPAN's Bug Tracker
 
-        The RT ( Request Tracker ) website is the default bug/issue tracking
-        system for CPAN.
+      The RT ( Request Tracker ) website is the default bug/issue tracking
+      system for CPAN.
 
-        <http://rt.cpan.org/NoAuth/Bugs.html?Dist=Task-BeLike-LESPEA>
+      http://rt.cpan.org/NoAuth/Bugs.html?Dist=Task-BeLike-LESPEA
 
-    *   AnnoCPAN
+      * AnnoCPAN
 
-        The AnnoCPAN is a website that allows community annotations of Perl
-        module documentation.
+      The AnnoCPAN is a website that allows community annotations of Perl
+      module documentation.
 
-        <http://annocpan.org/dist/Task-BeLike-LESPEA>
+      http://annocpan.org/dist/Task-BeLike-LESPEA
 
-    *   CPAN Ratings
+      * CPAN Ratings
 
-        The CPAN Ratings is a website that allows community ratings and
-        reviews of Perl modules.
+      The CPAN Ratings is a website that allows community ratings and
+      reviews of Perl modules.
 
-        <http://cpanratings.perl.org/d/Task-BeLike-LESPEA>
+      http://cpanratings.perl.org/d/Task-BeLike-LESPEA
 
-    *   CPAN Forum
+      * CPAN Forum
 
-        The CPAN Forum is a web forum for discussing Perl modules.
+      The CPAN Forum is a web forum for discussing Perl modules.
 
-        <http://cpanforum.com/dist/Task-BeLike-LESPEA>
+      http://cpanforum.com/dist/Task-BeLike-LESPEA
 
-    *   CPANTS
+      * CPANTS
 
-        The CPANTS is a website that analyzes the Kwalitee ( code metrics )
-        of a distribution.
+      The CPANTS is a website that analyzes the Kwalitee ( code metrics )
+      of a distribution.
 
-        <http://cpants.perl.org/dist/overview/Task-BeLike-LESPEA>
+      http://cpants.perl.org/dist/overview/Task-BeLike-LESPEA
 
-    *   CPAN Testers
+      * CPAN Testers
 
-        The CPAN Testers is a network of smokers who run automated tests on
-        uploaded CPAN distributions.
+      The CPAN Testers is a network of smokers who run automated tests on
+      uploaded CPAN distributions.
 
-        <http://www.cpantesters.org/distro/T/Task-BeLike-LESPEA>
+      http://www.cpantesters.org/distro/T/Task-BeLike-LESPEA
 
-    *   CPAN Testers Matrix
+      * CPAN Testers Matrix
 
-        The CPAN Testers Matrix is a website that provides a visual overview
-        of the test results for a distribution on various Perls/platforms.
+      The CPAN Testers Matrix is a website that provides a visual overview
+      of the test results for a distribution on various Perls/platforms.
 
-        <http://matrix.cpantesters.org/?dist=Task-BeLike-LESPEA>
+      http://matrix.cpantesters.org/?dist=Task-BeLike-LESPEA
 
-    *   CPAN Testers Dependencies
+      * CPAN Testers Dependencies
 
-        The CPAN Testers Dependencies is a website that shows a chart of the
-        test results of all dependencies for a distribution.
+      The CPAN Testers Dependencies is a website that shows a chart of the
+      test results of all dependencies for a distribution.
 
-        <http://deps.cpantesters.org/?module=Task::BeLike::LESPEA>
+      http://deps.cpantesters.org/?module=Task::BeLike::LESPEA
 
-  Bugs / Feature Requests
+ Bugs / Feature Requests
+
     Please report any bugs or feature requests by email to
-    "bug-task-belike-lespea at rt.cpan.org", or through the web interface at
-    <http://rt.cpan.org/NoAuth/ReportBug.html?Queue=Task-BeLike-LESPEA>. You
+    bug-task-belike-lespea at rt.cpan.org, or through the web interface at
+    http://rt.cpan.org/NoAuth/ReportBug.html?Queue=Task-BeLike-LESPEA. You
     will be automatically notified of any progress on the request by the
     system.
 
-  Source Code
+ Source Code
+
     The code is open to the world, and available for you to hack on. Please
     feel free to browse it and play with it, or whatever. If you want to
     contribute patches, please send me a diff or prod me to pull from your
     repository :)
 
-    <https://github.com/lespea/task-belike-lespea>
+    https://github.com/lespea/task-belike-lespea
 
       git clone git://github.com/lespea/task-belike-lespea.git
 
 COPYRIGHT AND LICENSE
-    This software is copyright (c) 2012 by Adam Lesperance.
+
+    This software is copyright (c) 2014 by Adam Lesperance.
 
     This is free software; you can redistribute it and/or modify it under
     the same terms as the Perl 5 programming language system itself.
 
 DISCLAIMER OF WARRANTY
+
     BECAUSE THIS SOFTWARE IS LICENSED FREE OF CHARGE, THERE IS NO WARRANTY
-    FOR THE SOFTWARE, TO THE EXTENT PERMITTED BY APPLICABLE LAW. EXCEPT WHEN
-    OTHERWISE STATED IN WRITING THE COPYRIGHT HOLDERS AND/OR OTHER PARTIES
-    PROVIDE THE SOFTWARE "AS IS" WITHOUT WARRANTY OF ANY KIND, EITHER
-    EXPRESSED OR IMPLIED, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
+    FOR THE SOFTWARE, TO THE EXTENT PERMITTED BY APPLICABLE LAW. EXCEPT
+    WHEN OTHERWISE STATED IN WRITING THE COPYRIGHT HOLDERS AND/OR OTHER
+    PARTIES PROVIDE THE SOFTWARE "AS IS" WITHOUT WARRANTY OF ANY KIND,
+    EITHER EXPRESSED OR IMPLIED, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
     WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE. THE
     ENTIRE RISK AS TO THE QUALITY AND PERFORMANCE OF THE SOFTWARE IS WITH
     YOU. SHOULD THE SOFTWARE PROVE DEFECTIVE, YOU ASSUME THE COST OF ALL
